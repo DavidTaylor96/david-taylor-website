@@ -1,0 +1,7 @@
+{
+  "version": 2,
+  "projects": {
+    "my-website": "apps/my-website",
+    "my-website-e2e": "apps/my-website-e2e"
+  }
+}
