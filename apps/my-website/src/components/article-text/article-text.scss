@@ -1,0 +1,22 @@
+.article-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  background-color: lightpink;
+
+  #separator {
+    height: 3px;
+    width: 130px;
+    background-color: #4f8689;
+  }
+
+  .button {
+    background-color: transparent;
+    border: 3px solid #4f8689;
+    border-radius: 10px;
+
+    .button-text {
+      color: #4f8689;
+    }
+  }
+}
