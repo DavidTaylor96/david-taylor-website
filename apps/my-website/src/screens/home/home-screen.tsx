@@ -1,3 +1,4 @@
+import { ArticleScreen } from '../../components/article-text/article-text';
 import { WelcomeHeader } from '../../components/welcome/welcome-header';
 import './home-screen.scss';
 
@@ -8,7 +9,7 @@ export function HomeScreen() {
         <WelcomeHeader />
       </header>
       <header className="wrapper one">
-        <WelcomeHeader />
+        <ArticleScreen />
       </header>
       <header className="wrapper two">
         <WelcomeHeader />
