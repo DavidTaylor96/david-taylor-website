@@ -1,10 +1,25 @@
 
-.find-out-more-container{
+.wrapper-left-find-out-more{
   display: flex; 
   flex-direction: column;
   align-items: flex-start;
-  flex: 1;
+  flex: 1;  
+}
 
+
+.wrapper-right-find-out-more{
+  display: flex; 
+  flex-direction: column;
+  align-items: flex-end;
+  flex: 1;  
+}
+
+
+
+.inner-container{
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
 
   
   .small-button {
@@ -30,6 +45,7 @@
   }
   
   .down-line {
+    margin-top: 20px;
     width: 1px;
     height: 315px;
     background-color: #847d7d;
