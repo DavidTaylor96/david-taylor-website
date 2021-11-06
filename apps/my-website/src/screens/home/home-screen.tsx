@@ -7,7 +7,7 @@ import computer from '../../assets/computer-books-and-plant.svg';
 import './home-screen.scss';
 import { FindOutMore } from '../../components/find-out-more/find-out-more';
 
-export function HomeScreen() {
+ const HomeScreen = () => {
   return (
     <section className="app">
       <header className="wrapper main-wrapper">

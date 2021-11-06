@@ -1,11 +1,11 @@
 import { StrictMode } from 'react';
 import * as ReactDOM from 'react-dom';
+import { App } from './app';
 
-import HomeScreen from './screens/home/home-screen';
 
 ReactDOM.render(
   <StrictMode>
-    <HomeScreen />
+    <App />
   </StrictMode>,
   document.getElementById('root')
 );
