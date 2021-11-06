@@ -18,10 +18,11 @@ import { FindOutMore } from '../../components/find-out-more/find-out-more';
         <div className="navigator-wrapper-left">
           <FindOutMore
           buttonText={'Find out more'}
+          id={'about-me'}
            />
         </div>
       <article className="wrapper main-wrapper">
-        <div className="article-container">
+        <div className="article-container" id={"about-me"}>
           <ArticleScreen articleHeader={'About Me'} button={true}>
             Innovative and self-motivated software developer with good
             problem-solving skills and a strong desire for continuous learning.
@@ -34,12 +35,13 @@ import { FindOutMore } from '../../components/find-out-more/find-out-more';
       </article>
         <div className="navigator-wrapper-right">
           <FindOutMore 
+          id={'my-work'}
           onRight={true}
           buttonText={'About my work'}
           />
         </div>
       <article className="wrapper main-wrapper">
-        <div className="article-container">
+        <div className="article-container" id={'my-work'}>
           <ImageContainer src={computer} />
           <div className="spacer" />
           <ArticleScreen articleHeader={'About my work'} button={true}>
