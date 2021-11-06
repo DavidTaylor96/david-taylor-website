@@ -34,6 +34,7 @@ export function HomeScreen() {
       </article>
         <div className="navigator-wrapper-right">
           <FindOutMore 
+          onRight={true}
           buttonText={'About my work'}
           />
         </div>
