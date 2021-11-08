@@ -8,6 +8,7 @@ interface IFindOutMore {
   onClick?: () => void;
   onRight?: boolean;
   id: string;
+  largeScreen?: boolean;
 }
 
 export const FindOutMore = (props: IFindOutMore) => {
@@ -19,7 +20,7 @@ export const FindOutMore = (props: IFindOutMore) => {
           : 'wrapper-left-find-out-more'
       }`}
     >
-      <Link to={props.id} smooth={true} offset={-90} duration={1000}>
+      <Link  to={props.id} smooth={true} offset={props.largeScreen ? -500 : -150} duration={1000}>
         <div className="inner-container">
           <button className="small-button" onClick={props.onClick}>
             <p id="small-button-text">{props.buttonText}</p>
