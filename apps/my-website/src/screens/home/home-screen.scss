@@ -3,16 +3,8 @@
   justify-content: center;
 }
 
-.app {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-family: 'Poppins';
-  max-width: 1300px;
-}
-
 .wrapper {
-  height: 90vh;
+  height: 75vh;
 }
 
 
@@ -34,6 +26,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin-right: 30px;
   margin-left: 30px;
 }

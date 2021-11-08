@@ -37,14 +37,14 @@ import { FindOutMore } from '../../components/find-out-more/find-out-more';
           <FindOutMore 
           id={'my-work'}
           onRight={true}
-          buttonText={'About my work'}
+          buttonText={'My Approach'}
           />
         </div>
       <article className="wrapper main-wrapper">
         <div className="article-container" id={'my-work'}>
           <ImageContainer src={computer} />
           <div className="spacer" />
-          <ArticleScreen articleHeader={'About my work'} button={true}>
+          <ArticleScreen articleHeader={'My Approach'} button={true}>
             I believe in a proactive approch to software deveopment.
             Understanding the bigger picture and making sure everyone is on the
             same page. This allows you to react and be agile in your approch to
