@@ -8,11 +8,8 @@ import { NavBar } from './components/nav-bar/nav-bar';
 // import HomeScreen from './screens/web/home/home-screen';
 
 const HomeScreen = React.lazy(() => import('./screens/home/home-screen'));
-
 const About = React.lazy(() => import('./screens/about/about'));
-// const ProductionScreen = React.lazy(
-//   () => import('./screens/web/production/production')
-// );
+const Work = React.lazy(() => import('./screens/work/work'));
 
 export const App = () => {
   return (
@@ -35,7 +32,9 @@ export const App = () => {
               </Suspense>
             </Route>
             <Route path="/work">
-              <Suspense fallback={null}>{/* <DesignScreen /> */}</Suspense>
+              <Suspense fallback={null}>
+                <Work />
+              </Suspense>
             </Route>
           </Switch>
         </section>
