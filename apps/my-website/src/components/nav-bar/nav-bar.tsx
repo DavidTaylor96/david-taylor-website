@@ -5,7 +5,7 @@ import './nav-bar.scss';
 
 export const NavBar = () => {
   return (
-    <Flex auto>
+    <Flex auto style={{backgroundColor: 'white'}}>
       <NavLink style={{ display: 'flex' }} to="/" activeClassName="selected">
         <Flex auto justify="center" align="center">
           <img id="image-logo" src={Logo} alt="image of david taylor" />
