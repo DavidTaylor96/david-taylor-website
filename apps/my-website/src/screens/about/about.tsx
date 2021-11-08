@@ -12,7 +12,12 @@ const AboutScreen = () => {
     <section className="app">
       <header className="wrapper main-wrapper">
         <div className="title-wrapper">
-          <WelcomeHeader />
+          <ArticleScreen articleHeader={'About me'}>
+            Software develoer currently based in Edinburgh, Scotland. Passionate
+            devloper that belives in bringing ideas to life through <b>creative UI</b>,
+            fast website with great <b>SEO</b> and fantastic <b>user journeys</b> to give the
+            best customer experience.
+          </ArticleScreen>
         </div>
       </header>
       <div className="navigator-wrapper-left">
@@ -38,9 +43,10 @@ const AboutScreen = () => {
           <div className="spacer" />
           <ArticleScreen articleHeader={'My passions'}>
             Growing up in the <b> Highlands of Scotland</b>. I was always
-            surounded by <b>outdoor actives</b>. I became an outdoor instructor and had
-            the opportunity to teach all over the EU. One of my faviroute pass
-            times is getting out on the water or up on the mountains.
+            surounded by <b>outdoor actives</b>. I became an outdoor instructor
+            and had the opportunity to teach all over the EU. One of my
+            faviroute pass times is getting out on the water or up on the
+            mountains.
           </ArticleScreen>
         </div>
       </article>

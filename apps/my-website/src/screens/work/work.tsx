@@ -11,7 +11,14 @@ const WorkScreen = () => {
     <section className="app">
       <header className="wrapper main-wrapper">
         <div className="title-wrapper">
-          <WelcomeHeader />
+          <ArticleScreen articleHeader={'About my work'}>
+            I enjoy working with forward-thinking people to build interactive,
+            accessible products. From working on projects from{' '}
+            <b>3D e-commerce sites</b>, App to <b>track lyme disease</b> and a
+            <b>social media scheduled app</b>. Through these experiences I have learn’t
+            the importance of planning and forwarded-thinking. This allows me and
+            the people i work with to finish projects on time.
+          </ArticleScreen>
         </div>
       </header>
       <div className="navigator-wrapper-left">
@@ -29,7 +36,11 @@ const WorkScreen = () => {
         </div>
       </article>
       <div className="navigator-wrapper-right">
-        <FindOutMore id={'my-work'} onRight={true} buttonText={'Technologies'} />
+        <FindOutMore
+          id={'my-work'}
+          onRight={true}
+          buttonText={'Technologies'}
+        />
       </div>
       <article className="wrapper main-wrapper">
         <div className="article-container" id={'my-work'}>
