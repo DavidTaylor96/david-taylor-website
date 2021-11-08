@@ -2,10 +2,7 @@ import React, { Suspense } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './app.scss';
 import { NavBar } from './components/nav-bar/nav-bar';
-
-// import { NavBar } from './components/nav-bar/nav-bar';
-// import ScrollToTop from './components/scroll-to-top';
-// import HomeScreen from './screens/web/home/home-screen';
+import ScrollToTop from './components/scroll-top/scroll-top';
 
 const HomeScreen = React.lazy(() => import('./screens/home/home-screen'));
 const About = React.lazy(() => import('./screens/about/about'));
@@ -14,7 +11,7 @@ const Work = React.lazy(() => import('./screens/work/work'));
 export const App = () => {
   return (
     <Router>
-      {/* <ScrollToTop /> */}
+      <ScrollToTop />
       <Switch>
         <section className="main-wrapper-position">
           <div className="nav-bar-position">

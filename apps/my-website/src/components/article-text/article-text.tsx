@@ -5,6 +5,7 @@ import React from 'react';
 interface IArticleScreenProps {
   articleHeader: string;
   button?: boolean;
+  onClick?: () => void;
 }
 
 export const ArticleScreen: React.FC<IArticleScreenProps> = (props) => {
@@ -14,7 +15,7 @@ export const ArticleScreen: React.FC<IArticleScreenProps> = (props) => {
       <span id="separator" />
       <p>{props.children}</p>
       {props.button && (
-        <button className="button">
+        <button className="button" onClick={props.onClick}>
           <p className="button-text">Learn more</p>
           <FiArrowRight id="icon"/>
         </button>
