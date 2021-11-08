@@ -5,6 +5,7 @@ import noticeboard from '../../assets/notice-board.svg';
 
 import './work.scss';
 import { FindOutMore } from '../../components/find-out-more/find-out-more';
+import { TechList } from '../../components/tech-list/tech-list';
 
 const WorkScreen = () => {
   return (
@@ -45,12 +46,7 @@ const WorkScreen = () => {
       <article className="wrapper main-wrapper">
         <div className="article-container" id={'my-work'}>
           <div className="spacer" />
-          <ArticleScreen articleHeader={'My passions'}>
-            Growing up in the <b> Highlands of Scotland</b>. I was always
-            surounded by outdoor actives. I became an outdoor instructor and had
-            the opportunity to teach all over the EU. One of my faviroute pass
-            times is getting out on the water or up on the mountains.
-          </ArticleScreen>
+          <TechList articleHeader={'My passions'} />
         </div>
       </article>
     </section>
