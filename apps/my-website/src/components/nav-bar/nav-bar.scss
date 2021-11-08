@@ -1,21 +1,29 @@
 .logo-pointer{
   cursor: pointer;
 }
+.nav-bar-wrapper{
+  position: sticky;
+  top: 0;
+}
 
 .nav-bar {
   display: flex;
   flex: 1;
-  background-color: violet;
+  justify-content: flex-end;
+  align-items: center;
   font-size: 20px;
   cursor: pointer;
 
   .list-item {
     text-decoration: none;
-    padding-left: 25px;
     color: black;
+    padding-left: 25px;
     padding-right: 25px;
-    font-family: 'Poppins';
   }
+
+}
+#image-logo{
+  height: 60px;
 }
 
 .icons-mobile-nav-bar{
@@ -35,7 +43,7 @@
   position: absolute;
   bottom: 0px;
   left: 18px;
-  border-bottom: 1px solid #004382;
+  border-bottom: 1px solid #557381;
   transition: 0.44s;
 }
 .sliding:hover:after {

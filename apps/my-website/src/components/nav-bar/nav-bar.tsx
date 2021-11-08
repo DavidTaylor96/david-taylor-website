@@ -1,26 +1,21 @@
 import { Flex } from 'react-flex-lite';
 import { NavLink } from 'react-router-dom';
-import Logo from '../../assets/logo.svg'
-import './nav-bar.scss'
+import Logo from '../../assets/logo.svg';
+import './nav-bar.scss';
 
 export const NavBar = () => {
   return (
-    <Flex auto >
-      <NavLink
-        style={{ display: 'flex' }}
-        to="/"
-        activeClassName="selected"
-      >
-        <Flex justify="center" align="center">
-          <h2>logo</h2>
-          <Logo/>
+    <Flex auto>
+      <NavLink style={{ display: 'flex' }} to="/" activeClassName="selected">
+        <Flex auto justify="center" align="center">
+          <img id="image-logo" src={Logo} alt="image of david taylor" />
         </Flex>
       </NavLink>
       <ul className="nav-bar">
-        <NavLink to="/design" activeClassName="selected">
-          <li className="list-item sliding">Design</li>
+        <NavLink to="/About" activeClassName="selected">
+          <li className="list-item sliding">About</li>
         </NavLink>
-        <NavLink to="/software" activeClassName="selected">
+        <NavLink to="/work" activeClassName="selected">
           <li className="list-item sliding">Work</li>
         </NavLink>
       </ul>
@@ -30,7 +25,7 @@ export const NavBar = () => {
           py={10}
           style={{
             borderRadius: 10,
-            backgroundColor: '#4F8689',
+            backgroundColor: '#557381',
             color: 'white',
             fontFamily: 'Poppins',
             cursor: 'pointer',
