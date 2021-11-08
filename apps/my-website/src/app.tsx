@@ -9,9 +9,7 @@ import { NavBar } from './components/nav-bar/nav-bar';
 
 const HomeScreen = React.lazy(() => import('./screens/home/home-screen'));
 
-// const SoftwareScreen = React.lazy(
-//   () => import('./screens/web/software/software')
-// );
+const About = React.lazy(() => import('./screens/about/about'));
 // const ProductionScreen = React.lazy(
 //   () => import('./screens/web/production/production')
 // );
@@ -21,24 +19,26 @@ export const App = () => {
     <Router>
       {/* <ScrollToTop /> */}
       <Switch>
-          <section className="main-wrapper-position">
-            <div className="nav-bar-position">
-              <NavBar />
-            </div>
-            <Switch>
-              <Route path="/" exact>
-                <Suspense fallback={null}>
-                  <HomeScreen />
-                </Suspense>
-              </Route>
-              <Route path="/about">
-                <Suspense fallback={null}>{/* <SoftwareScreen /> */}</Suspense>
-              </Route>
-              <Route path="/work">
-                <Suspense fallback={null}>{/* <DesignScreen /> */}</Suspense>
-              </Route>
-            </Switch>
-          </section>
+        <section className="main-wrapper-position">
+          <div className="nav-bar-position">
+            <NavBar />
+          </div>
+          <Switch>
+            <Route path="/" exact>
+              <Suspense fallback={null}>
+                <HomeScreen />
+              </Suspense>
+            </Route>
+            <Route path="/about">
+              <Suspense fallback={null}>
+                <About />
+              </Suspense>
+            </Route>
+            <Route path="/work">
+              <Suspense fallback={null}>{/* <DesignScreen /> */}</Suspense>
+            </Route>
+          </Switch>
+        </section>
       </Switch>
     </Router>
   );
