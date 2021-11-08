@@ -38,7 +38,7 @@ const AboutScreen = () => {
           <div className="spacer" />
           <ArticleScreen articleHeader={'My passions'}>
             Growing up in the <b> Highlands of Scotland</b>. I was always
-            surounded by outdoor actives. I became an outdoor instructor and had
+            surounded by <b>outdoor actives</b>. I became an outdoor instructor and had
             the opportunity to teach all over the EU. One of my faviroute pass
             times is getting out on the water or up on the mountains.
           </ArticleScreen>
