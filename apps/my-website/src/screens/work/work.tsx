@@ -45,7 +45,6 @@ const WorkScreen = () => {
       </div>
       <article className="wrapper main-wrapper">
         <div className="article-container" id={'my-work'}>
-          <div className="spacer" />
           <TechList articleHeader={'My passions'} />
         </div>
       </article>
