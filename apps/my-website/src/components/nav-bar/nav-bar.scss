@@ -41,11 +41,17 @@
 .sliding:after {
   content: '';
   position: absolute;
-  bottom: 0px;
-  left: 18px;
-  border-bottom: 1px solid #557381;
-  transition: 0.44s;
+  width: 0%;
+  height: 1px;
+  display: block;
+  transition: all 0.3s ease;
+  bottom: 25%;
+
+
 }
 .sliding:hover:after {
-  width: 73%;
+  margin-top: 10px;
+  width: 53%;
+  height: 10%;
+  background-color: #557381;
 }
