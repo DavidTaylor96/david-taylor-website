@@ -5,17 +5,20 @@ import './nav-bar.scss';
 
 export const NavBar = () => {
   return (
-    <Flex auto style={{ backgroundColor: 'white' }}>
-      <NavLink style={{ display: 'flex' }} to="/">
-        <Flex auto justify="center" align="center">
+    <Flex auto className="nav-bar">
+      <NavLink to="/">
+        <Flex
+          auto
+          justify="center"
+          align="center"
+        >
           <img id="image-logo" src={Logo} alt="image of david taylor" />
         </Flex>
       </NavLink>
-      <ul className="nav-bar">
+      <Flex auto />
+      <ul >
         <NavLink to="/" activeClassName="selected">
-          <li className="list-item sliding">
-              Home
-          </li>
+          <li className="list-item sliding">Home</li>
         </NavLink>
         <NavLink to="/about" activeClassName="selected">
           <li className="list-item sliding">About</li>

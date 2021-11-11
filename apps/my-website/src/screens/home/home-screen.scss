@@ -1,6 +1,7 @@
 #root {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .wrapper {
@@ -23,7 +24,6 @@
 
 .main-wrapper{
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-right: 30px;
@@ -36,6 +36,7 @@
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
+  flex: auto;
 }
 
 .navigator-wrapper-right {
@@ -76,4 +77,35 @@ p {
   font-weight: 400;
   margin: 0;
   padding: 0;
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+  h1 {
+    font-size: 42px;
+  }
+  
+  h2 {
+    font-size: 47px;
+  }
+  
+  h3 {
+    font-size: 31px;
+  }
+  
+  p {
+    font-size: 19px;
+  }
+  
+  .main-wrapper{
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  .reverse{
+    display: flex;
+    flex: 1;
+    flex-flow: column-reverse wrap;
+  }
+
 }

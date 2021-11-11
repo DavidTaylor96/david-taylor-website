@@ -26,7 +26,7 @@ const WorkScreen = () => {
         <FindOutMore buttonText={'My approach'} id={'about-me'} />
       </div>
       <article className="wrapper main-wrapper">
-        <div className="article-container" id={'about-me'}>
+        <div className="article-container reverse" id={'about-me'}>
           <ArticleScreen articleHeader={'My approach'}>
             No two projects are the same and I take a pragmatic approach to each
             projects I take on, focussing on delivering work that is as

@@ -24,7 +24,7 @@ const AboutScreen = () => {
         <FindOutMore buttonText={'Recent experience'} id={'about-me'} />
       </div>
       <article className="wrapper main-wrapper">
-        <div className="article-container" id={'about-me'}>
+        <div className="article-container reverse" id={'about-me'}>
           <ArticleScreen articleHeader={'Recent experience'}>
             I am currently working with a small start up software consultancy
             furm based in Edinburgh. Through is I have worked on many diffrent

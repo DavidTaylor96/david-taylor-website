@@ -33,8 +33,9 @@ import { useHistory } from 'react-router-dom';
           id={'about-me'}
            />
         </div>
-      <article className="wrapper main-wrapper">
-        <div className="article-container" id={"about-me"}>
+      
+      <article className="wrapper main-wrapper ">
+        <div className="article-container reverse" id={"about-me"}>
           <ArticleScreen articleHeader={'About Me'} button={true} onClick={handleAbout}>
             Innovative and self-motivated software developer with good
             problem-solving skills and a strong desire for continuous learning.
@@ -54,7 +55,7 @@ import { useHistory } from 'react-router-dom';
         </div>
       <article className="wrapper main-wrapper">
         <div className="article-container" id={'my-work'}>
-          <ImageContainer src={computer} />
+          <ImageContainer src={computer} noHeightOrWidth={true}/>
           <div className="spacer" />
           <ArticleScreen articleHeader={'My Approach'} button={true} onClick={handleWork}>
             I believe in a proactive approch to software deveopment.
