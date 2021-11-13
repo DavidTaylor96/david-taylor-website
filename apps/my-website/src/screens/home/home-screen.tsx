@@ -1,25 +1,23 @@
 import { ArticleScreen } from '../../components/article-text/article-text';
 import { ImageContainer } from '../../components/image-container/image-container';
 import { WelcomeHeader } from '../../components/welcome/welcome-header';
-import profileMain from '../../assets/profile-main.svg';
-import computer from '../../assets/computer-books-and-plant.svg';
+import  ProfileMain from '../../assets/profile-main.svg';
+import { ReactComponent as Computer } from '../../assets/computer-books-and-plant.svg';
 
 import './home-screen.scss';
 import { FindOutMore } from '../../components/find-out-more/find-out-more';
 import { useHistory } from 'react-router-dom';
 
- const HomeScreen = () => {
-
+const HomeScreen = () => {
   const history = useHistory();
 
   const handleAbout = () => {
-    history.push('/about')
+    history.push('/about');
   };
   const handleWork = () => {
-    history.push('/work')
+    history.push('/work');
   };
 
-  
   return (
     <section className="app">
       <header className="wrapper main-wrapper">
@@ -27,37 +25,42 @@ import { useHistory } from 'react-router-dom';
           <WelcomeHeader />
         </div>
       </header>
-        <div className="navigator-wrapper-left">
-          <FindOutMore
-          buttonText={'Find out more'}
-          id={'about-me'}
-           />
-        </div>
-      
+      <div className="navigator-wrapper-left">
+        <FindOutMore buttonText={'Find out more'} id={'about-me'} />
+      </div>
+
       <article className="wrapper main-wrapper ">
-        <div className="article-container reverse" id={"about-me"}>
-          <ArticleScreen articleHeader={'About Me'} button={true} onClick={handleAbout}>
+        <div className="article-container reverse" id={'about-me'}>
+          <ArticleScreen
+            articleHeader={'About Me'}
+            button={true}
+            onClick={handleAbout}
+          >
             Innovative and self-motivated software developer with good
             problem-solving skills and a strong desire for continuous learning.
             committed to continuing my progress and eager to develop my
             professional development.
           </ArticleScreen>
           <div className="spacer" />
-          <ImageContainer src={profileMain} />
+          <ImageContainer>
+            <img src={ProfileMain} className="image" />
+          </ImageContainer>
         </div>
       </article>
-        <div className="navigator-wrapper-right">
-          <FindOutMore 
-          id={'my-work'}
-          onRight={true}
-          buttonText={'My Approach'}
-          />
-        </div>
+      <div className="navigator-wrapper-right">
+        <FindOutMore id={'my-work'} onRight={true} buttonText={'My Approach'} />
+      </div>
       <article className="wrapper main-wrapper">
         <div className="article-container" id={'my-work'}>
-          <ImageContainer src={computer} noHeightOrWidth={true}/>
+          <ImageContainer>
+            <Computer />
+          </ImageContainer>
           <div className="spacer" />
-          <ArticleScreen articleHeader={'My Approach'} button={true} onClick={handleWork}>
+          <ArticleScreen
+            articleHeader={'My Approach'}
+            button={true}
+            onClick={handleWork}
+          >
             I believe in a proactive approch to software deveopment.
             Understanding the bigger picture and making sure everyone is on the
             same page. This allows you to react and be agile in your approch to
@@ -67,6 +70,6 @@ import { useHistory } from 'react-router-dom';
       </article>
     </section>
   );
-}
+};
 
 export default HomeScreen;

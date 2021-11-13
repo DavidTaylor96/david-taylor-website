@@ -1,8 +1,8 @@
 import { ArticleScreen } from '../../components/article-text/article-text';
 import { ImageContainer } from '../../components/image-container/image-container';
 import { WelcomeHeader } from '../../components/welcome/welcome-header';
-import profileAtDesk from '../../assets/profile-at-desk.svg';
-import mountains from '../../assets/mountains.svg';
+import ProfileAtDesk from '../../assets/profile-at-desk.svg';
+import { ReactComponent as Mountains} from '../../assets/mountains.svg';
 
 import './about.scss';
 import { FindOutMore } from '../../components/find-out-more/find-out-more';
@@ -14,9 +14,9 @@ const AboutScreen = () => {
         <div className="title-wrapper">
           <ArticleScreen articleHeader={'About me'}>
             Software develoer currently based in Edinburgh, Scotland. Passionate
-            devloper that belives in bringing ideas to life through <b>creative UI</b>,
-            fast website with great <b>SEO</b> and fantastic <b>user journeys</b> to give the
-            best customer experience.
+            devloper that belives in bringing ideas to life through{' '}
+            <b>creative UI</b>, fast website with great <b>SEO</b> and fantastic{' '}
+            <b>user journeys</b> to give the best customer experience.
           </ArticleScreen>
         </div>
       </header>
@@ -31,7 +31,9 @@ const AboutScreen = () => {
             projects. To deliver fast and effective solutions.
           </ArticleScreen>
           <div className="spacer" />
-          <ImageContainer src={profileAtDesk} />
+          <ImageContainer>
+          <img src={ProfileAtDesk} className="image" />
+          </ImageContainer>
         </div>
       </article>
       <div className="navigator-wrapper-right">
@@ -39,7 +41,9 @@ const AboutScreen = () => {
       </div>
       <article className="wrapper main-wrapper">
         <div className="article-container" id={'my-work'}>
-          <ImageContainer src={mountains} />
+          <ImageContainer>
+            <Mountains />
+          </ImageContainer>
           <div className="spacer" />
           <ArticleScreen articleHeader={'My passions'}>
             Growing up in the <b> Highlands of Scotland</b>. I was always

@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   flex: 1;
+  justify-content: center;
 
   #separator {
     height: 3px;
@@ -21,7 +22,8 @@
     flex-flow: row wrap;
     align-items: center;
     justify-content: space-between;
-    min-width: 300px;
+    width: 300px;
+
 
     .button-text {
       padding-left: 10px;
@@ -31,7 +33,7 @@
       color: #4f8689;
     }
 
-    #icon{
+    #icon {
       display: flex;
       justify-content: center;
       align-items: center;

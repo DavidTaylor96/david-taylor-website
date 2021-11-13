@@ -1,7 +1,7 @@
 import { ArticleScreen } from '../../components/article-text/article-text';
 import { ImageContainer } from '../../components/image-container/image-container';
 import { WelcomeHeader } from '../../components/welcome/welcome-header';
-import noticeboard from '../../assets/notice-board.svg';
+import  { ReactComponent as Noticeboard} from '../../assets/notice-board.svg';
 
 import './work.scss';
 import { FindOutMore } from '../../components/find-out-more/find-out-more';
@@ -33,7 +33,9 @@ const WorkScreen = () => {
             accessible and optimised as possible.
           </ArticleScreen>
           <div className="spacer" />
-          <ImageContainer src={noticeboard} />
+          <ImageContainer >
+            <Noticeboard />
+          </ImageContainer>
         </div>
       </article>
       <div className="navigator-wrapper-right">

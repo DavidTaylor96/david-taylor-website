@@ -2,5 +2,9 @@
   display: flex;
   flex: 1;
   justify-content: center;
-  align-items: center;
+}
+
+
+@media only screen and (max-width: 1300px) {
+  .image-container{}
 }

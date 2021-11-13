@@ -34,19 +34,23 @@
 .article-container {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-  flex: auto;
+  flex: 1;
+}
+
+.image{
+  height: 30em
+
 }
 
 .navigator-wrapper-right {
   display: flex;
   flex: 1;
-padding-right: 100px;
+  padding-right: 100px;
 }
 
 .spacer {
   width: 100px;
+  height: 10px;
 }
 
 h1 {
@@ -101,6 +105,14 @@ p {
   .main-wrapper{
     padding-right: 30px;
     padding-left: 30px;
+  }
+  .spacer{}
+
+  .article-container{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    height: 100%;
   }
   .reverse{
     display: flex;

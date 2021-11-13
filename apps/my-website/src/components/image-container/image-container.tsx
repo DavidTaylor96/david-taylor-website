@@ -1,16 +1,14 @@
+import React from 'react';
+import { ReactElement } from 'react';
 import './image-container.scss';
 
 interface IImageContainerProps {
-  src: string;
   noHeightOrWidth?: boolean;
 }
-export const ImageContainer = (props: IImageContainerProps) => {
+export const ImageContainer: React.FC<IImageContainerProps> = (props) => {
   return (
     <section className="image-container">
-      <img style={{
-        height: `${props.noHeightOrWidth ? 'inherent' : '30em'}`,
-        width: `${props.noHeightOrWidth ? 'inherent' : '30em'}`,
-      }} src={props.src} alt="image of david taylor" />
+      {props.children}
     </section>
   );
 };
