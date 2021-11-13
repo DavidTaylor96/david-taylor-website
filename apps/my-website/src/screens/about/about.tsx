@@ -40,7 +40,7 @@ const AboutScreen = () => {
         <FindOutMore id={'my-work'} onRight={true} buttonText={'My passion'} />
       </div>
       <article className="wrapper main-wrapper">
-        <div className="article-container" id={'my-work'}>
+        <div className="article-container bottom-wrapper " id={'my-work'}>
           <ImageContainer>
             <Mountains />
           </ImageContainer>

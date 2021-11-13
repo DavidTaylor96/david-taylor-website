@@ -16,7 +16,7 @@ export const NavBar = () => {
         </Flex>
       </NavLink>
       <Flex auto />
-      <ul >
+      <ul className="nav-bar-container" >
         <NavLink to="/" activeClassName="selected">
           <li className="list-item sliding">Home</li>
         </NavLink>
