@@ -7,6 +7,8 @@ import { ReactComponent as Computer } from '../../assets/computer-books-and-plan
 import './home-screen.scss';
 import { FindOutMore } from '../../components/find-out-more/find-out-more';
 import { useHistory } from 'react-router-dom';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const HomeScreen = () => {
   const history = useHistory();
@@ -18,10 +20,11 @@ const HomeScreen = () => {
     history.push('/work');
   };
 
+  
   return (
     <section className="app">
       <header className="wrapper main-wrapper">
-        <div className="title-wrapper">
+        <div className="title-wrapper" >
           <WelcomeHeader />
         </div>
       </header>
