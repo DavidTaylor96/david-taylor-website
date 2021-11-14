@@ -33,6 +33,8 @@
   display: flex;
   flex-flow: row wrap;
   flex: 1;
+  z-index: -999;
+
 }
 
 .image {

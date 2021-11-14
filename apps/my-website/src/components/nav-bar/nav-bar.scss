@@ -9,6 +9,7 @@
   font-size: 20px;
   padding-left: 10px;
   padding-right: 10px;
+  background-color: white;
 
   .list-item {
     text-decoration: none;
@@ -66,6 +67,5 @@
 
 @media only screen and (max-width: 700px) {
   .nav-bar-container{
-    display: none;
   }
 }

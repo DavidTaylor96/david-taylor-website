@@ -1,14 +1,11 @@
 import { ArticleScreen } from '../../components/article-text/article-text';
 import { ImageContainer } from '../../components/image-container/image-container';
 import { WelcomeHeader } from '../../components/welcome/welcome-header';
-import  ProfileMain from '../../assets/profile-main.svg';
 import { ReactComponent as Computer } from '../../assets/computer-books-and-plant.svg';
-
-import './home-screen.scss';
 import { FindOutMore } from '../../components/find-out-more/find-out-more';
+import  ProfileMain from '../../assets/profile-main.svg';
 import { useHistory } from 'react-router-dom';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import './home-screen.scss';
 
 const HomeScreen = () => {
   const history = useHistory();
