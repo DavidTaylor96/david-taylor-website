@@ -1,11 +1,9 @@
+import { ReactComponent as Noticeboard } from '../../assets/notice-board.svg';
 import { ArticleScreen } from '../../components/article-text/article-text';
-import { ImageContainer } from '../../components/image-container/image-container';
-import { WelcomeHeader } from '../../components/welcome/welcome-header';
-import  { ReactComponent as Noticeboard} from '../../assets/notice-board.svg';
-
-import './work.scss';
 import { FindOutMore } from '../../components/find-out-more/find-out-more';
+import { ImageContainer } from '../../components/image-container/image-container';
 import { TechList } from '../../components/tech-list/tech-list';
+import '../home/home-screen.scss';
 
 const WorkScreen = () => {
   return (

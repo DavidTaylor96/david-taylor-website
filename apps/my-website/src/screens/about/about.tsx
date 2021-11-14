@@ -1,11 +1,10 @@
 import { ArticleScreen } from '../../components/article-text/article-text';
 import { ImageContainer } from '../../components/image-container/image-container';
-import { WelcomeHeader } from '../../components/welcome/welcome-header';
 import ProfileAtDesk from '../../assets/profile-at-desk.svg';
 import { ReactComponent as Mountains} from '../../assets/mountains.svg';
-
-import './about.scss';
 import { FindOutMore } from '../../components/find-out-more/find-out-more';
+
+import '../home/home-screen.scss'
 
 const AboutScreen = () => {
   return (
