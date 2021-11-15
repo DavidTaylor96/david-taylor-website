@@ -6,6 +6,7 @@ import 'aos/dist/aos.css';
 
 interface IImageContainerProps {
   noHeightOrWidth?: boolean;
+  image?: string;
 }
 export const ImageContainer: React.FC<IImageContainerProps> = (props) => {
 
@@ -18,7 +19,9 @@ export const ImageContainer: React.FC<IImageContainerProps> = (props) => {
 
   return (
     <section className="image-container"  data-aos="fade-up-right">
-      {props.children}
+      <div className="image-wrapper">
+        <img src={props.image} className="image" />
+      </div>
     </section>
   );
 };

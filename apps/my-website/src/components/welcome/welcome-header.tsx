@@ -10,7 +10,7 @@ export const WelcomeHeader = () => {
 
   return (
     <header className="welcome-header">
-      <h1 id="h1">Hello, my name is</h1>
+      <h1>Hello, my name is</h1>
       <img
         data-aos="fade-right"
         data-aos-delay="300"
@@ -18,7 +18,7 @@ export const WelcomeHeader = () => {
         src={NameLogo}
         alt="image of david taylor"
       />
-      <h3 id="h3">
+      <h3>
         <i>creative developer</i>
       </h3>
     </header>
