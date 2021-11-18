@@ -10,10 +10,9 @@
   height: 75vh;
   display: flex; 
   flex-basis: 100%;
-  flex-flow: row wrap;
+  flex-flow: row;
   justify-content: center;
   align-items: center;
-  background-color: purple;
 }
 
 
@@ -60,5 +59,16 @@ p {
 }
 
 @media only screen and (max-width: 1024px) {
+
+
+
+.wrapper {
+  display: flex; 
+  flex-basis: 100%;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+
 
 }

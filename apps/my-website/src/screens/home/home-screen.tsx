@@ -20,9 +20,7 @@ const HomeScreen = () => {
   return (
     <section className="app">
       <header className="wrapper">
-        <div className="title-wrapper">
           <WelcomeHeader />
-        </div>
       </header>
       <div className="navigator-wrapper-left">
         <FindOutMore buttonText={'Find out more'} id={'about-me'} />

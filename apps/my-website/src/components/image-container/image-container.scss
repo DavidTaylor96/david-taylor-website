@@ -1,12 +1,18 @@
 .image-container{
   display: flex;
   flex: auto;
-  padding-right: 5em;
-  padding-left: 5em;
+  padding-right: 10%;
+  padding-left: 10%;
+
 
   .image-wrapper{
     display: flex; 
     justify-content: center;
     align-items: center;
+
+    .image{
+      width: 20em;
+      height: 30em;
+    }
   }
 }

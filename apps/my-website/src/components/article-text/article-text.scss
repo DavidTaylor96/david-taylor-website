@@ -1,8 +1,9 @@
 .article-wrapper {
   display: flex;
   flex-direction: column;
-  flex: 1;
   justify-content: center;
+  padding-left: 2em;
+  padding-right: 2em;
 
   #separator {
     height: 3px;
@@ -16,13 +17,12 @@
     background-color: transparent;
     border: 3px solid #4f8689;
     border-radius: 10px;
-    margin-right: 21em;
     cursor: pointer;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
     justify-content: space-between;
-    width: 300px;
+    max-width: 300px;
 
     .button-text {
       padding-left: 10px;
