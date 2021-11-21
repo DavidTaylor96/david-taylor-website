@@ -1,7 +1,7 @@
 import { ArticleScreen } from '../../components/article-text/article-text';
 import { ImageContainer } from '../../components/image-container/image-container';
 import { WelcomeHeader } from '../../components/welcome/welcome-header';
-import Computer from '../../assets/computer-books-and-plant.svg';
+import Computer from '../../assets/computer-plant-and-books.svg';
 import { FindOutMore } from '../../components/find-out-more/find-out-more';
 import ProfileMain from '../../assets/profile-main.svg';
 import { useHistory } from 'react-router-dom';
