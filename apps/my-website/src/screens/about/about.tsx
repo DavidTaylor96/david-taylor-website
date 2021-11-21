@@ -20,7 +20,7 @@ const AboutScreen = () => {
       <div className="navigator-wrapper-left">
         <FindOutMore buttonText={'Recent experience'} id={'about-me'} />
       </div>
-      <article className="wrapper" id={'about-me'}>
+      <article className="wrapper reverse" id={'about-me'}>
           <ArticleScreen articleHeader={'Recent experience'}>
             I am currently working with a small start up software consultancy
             furm based in Edinburgh. Through is I have worked on many diffrent

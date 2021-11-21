@@ -1,18 +1,24 @@
-.image-container{
+.image-container {
   display: flex;
   flex: auto;
   padding-right: 10%;
   padding-left: 10%;
 
-
-  .image-wrapper{
-    display: flex; 
+  .image-wrapper {
+    display: flex;
     justify-content: center;
     align-items: center;
 
-    .image{
-      width: 20em;
-      height: 30em;
+    .image {
+      height: 25vh;
+      width: 25vw;
+    }
+    @media only screen and (max-width: 1024px) {
+      .image {
+        height: 100%;
+        width: 120%;
+      }
     }
   }
 }
+

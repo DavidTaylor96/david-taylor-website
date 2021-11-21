@@ -26,7 +26,7 @@ const HomeScreen = () => {
         <FindOutMore buttonText={'Find out more'} id={'about-me'} />
       </div>
 
-      <article className="wrapper " id={'about-me'}>
+      <article className="wrapper reverse" id={'about-me'}>
         <ArticleScreen
           articleHeader={'About Me'}
           button={true}

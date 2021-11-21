@@ -5,16 +5,14 @@
   transition: all 1s ease;
 }
 
-
 .wrapper {
   height: 75vh;
-  display: flex; 
+  display: flex;
   flex-basis: 100%;
   flex-flow: row;
   justify-content: center;
   align-items: center;
 }
-
 
 .navigator-wrapper-left {
   display: flex;
@@ -59,16 +57,18 @@ p {
 }
 
 @media only screen and (max-width: 1024px) {
+  .wrapper {
+    display: flex;
+    flex-basis: 100%;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 
-
-
-.wrapper {
-  display: flex; 
-  flex-basis: 100%;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
-}
-
-
+  .reverse {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
