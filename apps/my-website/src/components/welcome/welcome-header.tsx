@@ -8,6 +8,9 @@ export const WelcomeHeader = () => {
 
   AOS.init({
     once: true,
+    delay: 500,
+    duration: 10000,
+    easing: 'ease',
   });
 
   return (
@@ -16,6 +19,7 @@ export const WelcomeHeader = () => {
       <img
         data-aos="fade-right"
         data-aos-delay="300"
+        data-aos-duration="2000"
         id="name-logo"
         src={NameLogo}
         alt="image of david taylor"
