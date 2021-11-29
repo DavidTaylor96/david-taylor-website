@@ -14,29 +14,28 @@ export const NavBar = () => {
 
   if (!isMobile) {
     return (
-      <Flex mx={25} className="mobile-wrapper">
+      <Flex px={25} className="mobile-wrapper">
         <NavLink to="/">
           <Flex auto justify="center" align="center">
             <img id="image-logo" src={Logo} alt="image of david taylor" />
           </Flex>
         </NavLink>
         <Flex auto />
-        <Hamburger toggled={isOpen} toggle={setOpen}  color={'#557381'} />
+        <Hamburger toggled={isOpen} toggle={setOpen} color={'#557381'} />
         {isOpen && (
-          <Flex column className="nav-bar-mobile"> 
-            <ul className="nav-bar-mobile-container">
-              <NavLink to="/" activeClassName="selected">
-                <li className="list-item">Home</li>
-              </NavLink>
-              <NavLink to="/about" activeClassName="selected">
-                <li className="list-item">About</li>
-              </NavLink>
-              <NavLink to="/work" activeClassName="selected">
-                <li className="list-item">Work</li>
-              </NavLink>
-              <li className="mobile-contact">Contact</li>
-            </ul>
-          </Flex>
+          <ul className="nav-bar-mobile-container">
+            <Hamburger toggled={isOpen} toggle={setOpen} color={'#557381'} />
+            <NavLink to="/" activeClassName="selected">
+              <li className="list-item">Home</li>
+            </NavLink>
+            <NavLink to="/about" activeClassName="selected">
+              <li className="list-item">About</li>
+            </NavLink>
+            <NavLink to="/work" activeClassName="selected">
+              <li className="list-item">Work</li>
+            </NavLink>
+            <li className="mobile-contact">Contact</li>s
+          </ul>
         )}
       </Flex>
     );
@@ -44,6 +43,7 @@ export const NavBar = () => {
   return (
     <Flex auto className="nav-bar">
       <NavLink to="/">
+        
         <Flex auto justify="center" align="center">
           <img id="image-logo" src={Logo} alt="image of david taylor" />
         </Flex>
