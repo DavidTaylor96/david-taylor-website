@@ -3,38 +3,59 @@ import { NavLink } from 'react-router-dom';
 import Logo from '../../assets/logo.svg';
 import './nav-bar.scss';
 import { useIsMobile } from '../../hooks/use-is-mobile';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Hamburger from 'hamburger-react';
+import FadeIn from 'react-fade-in';
 
 export const NavBar = () => {
   const isMobile = useIsMobile();
 
-  const [toggle, setToggle] = useState<boolean>();
-  const [isOpen, setOpen] = useState(false);
+  const [isOpen, setOpen] = useState<boolean>();
+
+  const toggleOpen = () => {
+    setOpen(!isOpen);
+  };
 
   if (!isMobile) {
     return (
-      <Flex px={25} className="mobile-wrapper">
+      <Flex px={25} pb={20} className="mobile-wrapper">
         <NavLink to="/">
-          <Flex auto justify="center" align="center">
+          <Flex auto justify="center" align="center" onClick={toggleOpen}>
             <img id="image-logo" src={Logo} alt="image of david taylor" />
           </Flex>
         </NavLink>
         <Flex auto />
-        <Hamburger toggled={isOpen} toggle={setOpen} color={'#557381'} />
+        <Hamburger toggled={isOpen} toggle={toggleOpen} color={'#557381'} />
         {isOpen && (
           <ul className="nav-bar-mobile-container">
-            <Hamburger toggled={isOpen} toggle={setOpen} color={'#557381'} />
-            <NavLink to="/" activeClassName="selected">
-              <li className="list-item">Home</li>
-            </NavLink>
-            <NavLink to="/about" activeClassName="selected">
-              <li className="list-item">About</li>
-            </NavLink>
-            <NavLink to="/work" activeClassName="selected">
-              <li className="list-item">Work</li>
-            </NavLink>
-            <li className="mobile-contact">Contact</li>s
+            <Flex
+              auto
+              column
+              align={'center'}
+              justify={'center'}
+              className="inner-mobile-container"
+            >
+              <FadeIn>
+                <NavLink to="/" activeClassName="selected" onClick={toggleOpen}>
+                  <li className="list-item-mobile">Home</li>
+                </NavLink>
+                <NavLink
+                  to="/about"
+                  activeClassName="selected"
+                  onClick={toggleOpen}
+                >
+                  <li className="list-item-mobile">About</li>
+                </NavLink>
+                <NavLink
+                  to="/work"
+                  activeClassName="selected"
+                  onClick={toggleOpen}
+                >
+                  <li className="list-item-mobile">Work</li>
+                </NavLink>
+                <li className="list-item-mobile">Contact</li>
+              </FadeIn>
+            </Flex>
           </ul>
         )}
       </Flex>
@@ -43,7 +64,6 @@ export const NavBar = () => {
   return (
     <Flex auto className="nav-bar">
       <NavLink to="/">
-        
         <Flex auto justify="center" align="center">
           <img id="image-logo" src={Logo} alt="image of david taylor" />
         </Flex>

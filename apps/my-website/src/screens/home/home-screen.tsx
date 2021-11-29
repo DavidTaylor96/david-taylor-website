@@ -6,6 +6,7 @@ import { FindOutMore } from '../../components/find-out-more/find-out-more';
 import ProfileMain from '../../assets/profile-main.svg';
 import { useHistory } from 'react-router-dom';
 import './home-screen.scss';
+import { Flex } from 'react-flex-lite';
 
 const HomeScreen = () => {
   const history = useHistory();
@@ -19,7 +20,7 @@ const HomeScreen = () => {
 
   return (
     <section className="app">
-      <header className="wrapper">
+      <header className="welcome-wrapper">
           <WelcomeHeader />
       </header>
       <div className="navigator-wrapper-left">
@@ -43,7 +44,10 @@ const HomeScreen = () => {
         <FindOutMore id={'my-work'} onRight={true} buttonText={'My Approach'} />
       </div>
       <article className="wrapper" id={'my-work'}>
-        <ImageContainer image={Computer} />
+        <Flex  justify={'center'} className="profile-container-outer">
+             <img src={Computer} className="computer-logo"  alt="david taylor"/>
+        </Flex>
+        <Flex w={100}/>
         <ArticleScreen
           articleHeader={'My Approach'}
           button={true}

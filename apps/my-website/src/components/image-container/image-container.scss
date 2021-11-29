@@ -1,22 +1,21 @@
 .image-container {
   display: flex;
-  flex: auto;
-  padding-right: 10%;
-  padding-left: 10%;
+  flex: 1;
+  justify-content: center;
 
   .image-wrapper {
     display: flex;
+    flex: auto;
     justify-content: center;
-    align-items: center;
 
     .image {
-      height: 25vh;
-      width: 25vw;
+      height: 35vh;
+      width: auto;
     }
     @media only screen and (max-width: 1024px) {
       .image {
         height: 100%;
-        width: 120%;
+        width: 100%;
       }
     }
   }

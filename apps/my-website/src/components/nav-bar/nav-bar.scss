@@ -69,12 +69,26 @@
   position: relative;
   .nav-bar-mobile-container {
     position: absolute;
-    top: 0;
+    top: 4vh;
     bottom: 0;
     right: 0;
-    background-color: orchid;
-    height: 100vh;
-    width: 20vw;
+    left: -30px;
+
+    .inner-mobile-container {
+      background-color: #557381;
+      height: 100vh;
+    }
+  }
+
+  li {
+    list-style-type: none;
+  }
+
+  .list-item-mobile {
+    text-decoration: none;
+    color: white;
+    padding-bottom: 20px;
+    font-size: 30px;
   }
 }
 

@@ -1,9 +1,11 @@
+import { Flex } from 'react-flex-lite';
 import Noticeboard from '../../assets/notice-board.svg';
 import { ArticleScreen } from '../../components/article-text/article-text';
 import { FindOutMore } from '../../components/find-out-more/find-out-more';
 import { ImageContainer } from '../../components/image-container/image-container';
 import { TechList } from '../../components/tech-list/tech-list';
 import '../home/home-screen.scss';
+import './work.scss';
 
 const WorkScreen = () => {
   return (
@@ -27,7 +29,10 @@ const WorkScreen = () => {
           projects I take on, focussing on delivering work that is as accessible
           and optimised as possible.
         </ArticleScreen>
-        <ImageContainer image={Noticeboard} />
+        {/* <ImageContainer image={Noticeboard} /> */}
+        <Flex auto justify={'center'} className="image-container-outer">
+             <img src={Noticeboard} className="noticeboard-logo"  alt="david taylor"/>
+        </Flex>
       </article>
       <div className="navigator-wrapper-right">
         <FindOutMore

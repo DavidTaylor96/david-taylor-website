@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  flex: 1;
+  flex: auto;
 
   #separator {
     height: 3px;
@@ -35,7 +35,7 @@
         padding-bottom: 10px;
         flex-direction: row;
       }
-
+      
       #logo {
         display: flex;
         justify-content: center;
@@ -47,3 +47,20 @@
     }
   }
 }
+
+
+
+@media only screen and (max-width: 1024px) {
+
+  .tech-wrapper{
+    display: flex; 
+    flex: auto;
+    width: 90%;
+      
+          #list-element{
+            font-size: 16px;
+          }
+  
+  }
+ }
+

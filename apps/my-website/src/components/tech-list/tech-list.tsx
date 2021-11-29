@@ -18,8 +18,8 @@ export const TechList: React.FC<ITechListProps> = (props) => {
 
   return (
     <section className="tech-wrapper">
-      <h1  data-aos="fade-right" data-aos-delay="300" >{props.articleHeader}</h1>
-      <span id="separator" />
+      <h1 className="header"  data-aos="fade-right" data-aos-delay="300" >{props.articleHeader}</h1>
+      <span  id="separator" className="header" />
       <div className="list-inner-wrapper">
         <section className="list-container">
           <div className="inner-list">
