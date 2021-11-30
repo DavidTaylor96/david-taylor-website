@@ -4,6 +4,8 @@
   flex-direction: column;
   align-items: flex-start;
   flex: 1;  
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 
@@ -12,6 +14,8 @@
   flex-direction: column;
   align-items: flex-end;
   flex: 1;  
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 
@@ -47,7 +51,7 @@
   .down-line {
     margin-top: 20px;
     width: 1px;
-    height: 200px;
+    height: 30vh;
     background-color: #a1a1a1;
   }
 }

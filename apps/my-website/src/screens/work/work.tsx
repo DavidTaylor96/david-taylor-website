@@ -4,13 +4,16 @@ import { ArticleScreen } from '../../components/article-text/article-text';
 import { FindOutMore } from '../../components/find-out-more/find-out-more';
 import { ImageContainer } from '../../components/image-container/image-container';
 import { TechList } from '../../components/tech-list/tech-list';
+import { useIsMobile } from '../../hooks/use-is-mobile';
 import '../home/home-screen.scss';
 import './work.scss';
 
 const WorkScreen = () => {
+  const isNotMobile = useIsMobile();
+
   return (
     <section className="app">
-      <header className="wrapper">
+      <header className="welcome-wrapper">
         <ArticleScreen articleHeader={'About my work'}>
           I enjoy working with forward-thinking people to build interactive,
           accessible products. From working on projects from{' '}
@@ -20,9 +23,11 @@ const WorkScreen = () => {
           me and the people i work with to finish projects on time.
         </ArticleScreen>
       </header>
-      <div className="navigator-wrapper-left">
-        <FindOutMore buttonText={'My approach'} id={'about-me'} />
-      </div>
+      {isNotMobile && (
+        <div className="navigator-wrapper-left">
+          <FindOutMore buttonText={'My approach'} id={'about-me'} />
+        </div>
+      )}
       <article className="wrapper reverse" id={'about-me'}>
         <ArticleScreen articleHeader={'My approach'}>
           No two projects are the same and I take a pragmatic approach to each
@@ -30,16 +35,22 @@ const WorkScreen = () => {
           and optimised as possible.
         </ArticleScreen>
         <Flex justify={'center'} className="image-container-outer">
-             <img src={Noticeboard} className="noticeboard-logo"  alt="david taylor"/>
+          <img
+            src={Noticeboard}
+            className="noticeboard-logo"
+            alt="david taylor"
+          />
         </Flex>
       </article>
-      <div className="navigator-wrapper-right">
-        <FindOutMore
-          id={'my-work'}
-          onRight={true}
-          buttonText={'Technologies'}
-        />
-      </div>
+      {isNotMobile && (
+        <div className="navigator-wrapper-right">
+          <FindOutMore
+            id={'my-work'}
+            onRight={true}
+            buttonText={'Technologies'}
+          />
+        </div>
+      )}
       <article className="wrapper" id={'my-work'}>
         <TechList articleHeader={'My passions'} />
       </article>

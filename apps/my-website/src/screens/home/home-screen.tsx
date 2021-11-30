@@ -7,9 +7,12 @@ import ProfileMain from '../../assets/profile-main.svg';
 import { useHistory } from 'react-router-dom';
 import './home-screen.scss';
 import { Flex } from 'react-flex-lite';
+import { useIsMobile } from '../../hooks/use-is-mobile';
 
 const HomeScreen = () => {
   const history = useHistory();
+
+  const isNotMobile = useIsMobile();
 
   const handleAbout = () => {
     history.push('/about');
@@ -21,12 +24,13 @@ const HomeScreen = () => {
   return (
     <section className="app">
       <header className="welcome-wrapper">
-          <WelcomeHeader />
+        <WelcomeHeader />
       </header>
-      <div className="navigator-wrapper-left">
-        <FindOutMore buttonText={'Find out more'} id={'about-me'} />
-      </div>
-
+      {isNotMobile && (
+        <div className="navigator-wrapper-left">
+          <FindOutMore buttonText={'Find out more'} id={'about-me'} />
+        </div>
+      )}
       <article className="wrapper reverse" id={'about-me'}>
         <ArticleScreen
           articleHeader={'About Me'}
@@ -40,14 +44,20 @@ const HomeScreen = () => {
         </ArticleScreen>
         <ImageContainer image={ProfileMain} />
       </article>
-      <div className="navigator-wrapper-right">
-        <FindOutMore id={'my-work'} onRight={true} buttonText={'My Approach'} />
-      </div>
+      {isNotMobile && (
+        <div className="navigator-wrapper-right">
+          <FindOutMore
+            id={'my-work'}
+            onRight={true}
+            buttonText={'My Approach'}
+          />
+        </div>
+      )}
       <article className="wrapper" id={'my-work'}>
-        <Flex  justify={'center'} className="profile-container-outer">
-             <img src={Computer} className="computer-logo"  alt="david taylor"/>
+        <Flex justify={'center'} className="profile-container-outer">
+          <img src={Computer} className="computer-logo" alt="david taylor" />
         </Flex>
-        <Flex w={100}/>
+        <Flex w={100} />
         <ArticleScreen
           articleHeader={'My Approach'}
           button={true}
