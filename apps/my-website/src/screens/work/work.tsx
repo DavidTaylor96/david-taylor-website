@@ -29,8 +29,7 @@ const WorkScreen = () => {
           projects I take on, focussing on delivering work that is as accessible
           and optimised as possible.
         </ArticleScreen>
-        {/* <ImageContainer image={Noticeboard} /> */}
-        <Flex auto justify={'center'} className="image-container-outer">
+        <Flex justify={'center'} className="image-container-outer">
              <img src={Noticeboard} className="noticeboard-logo"  alt="david taylor"/>
         </Flex>
       </article>
