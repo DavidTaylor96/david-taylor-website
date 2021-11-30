@@ -21,6 +21,7 @@
 }
 #image-logo {
   height: 60px;
+  z-index: 999;
 }
 
 .icons-mobile-nav-bar {
@@ -67,6 +68,7 @@
 
 .mobile-wrapper {
   position: relative;
+
   .nav-bar-mobile-container {
     position: absolute;
     top: 4vh;
@@ -75,7 +77,7 @@
     left: -30px;
 
     .inner-mobile-container {
-      background-color: #557381;
+      background-color: white;
       height: 100vh;
     }
   }
@@ -86,7 +88,14 @@
 
   .list-item-mobile {
     text-decoration: none;
-    color: white;
+    color: black;
+    padding-bottom: 20px;
+    font-size: 30px;
+  }
+
+  .mobile-contact {
+    color: #557381;
+    text-decoration: none;
     padding-bottom: 20px;
     font-size: 30px;
   }

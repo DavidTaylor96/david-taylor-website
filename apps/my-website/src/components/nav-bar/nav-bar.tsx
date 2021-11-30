@@ -20,7 +20,12 @@ export const NavBar = () => {
     return (
       <Flex px={25} pb={20} className="mobile-wrapper">
         <NavLink to="/">
-          <Flex auto justify="center" align="center" onClick={toggleOpen}>
+          <Flex
+            auto
+            justify="center"
+            align="center"
+            onClick={() => setOpen(false)}
+          >
             <img id="image-logo" src={Logo} alt="image of david taylor" />
           </Flex>
         </NavLink>
@@ -53,7 +58,7 @@ export const NavBar = () => {
                 >
                   <li className="list-item-mobile">Work</li>
                 </NavLink>
-                <li className="list-item-mobile">Contact</li>
+                <li className="mobile-contact">Contact</li>
               </FadeIn>
             </Flex>
           </ul>
