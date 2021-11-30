@@ -41,22 +41,25 @@ export const NavBar = () => {
               className="inner-mobile-container"
             >
               <FadeIn>
-                <NavLink to="/" activeClassName="selected" onClick={toggleOpen}>
-                  <li className="list-item-mobile">Home</li>
+                <NavLink to="/" activeClassName="selected-mobile" className="link-text" onClick={toggleOpen}>
+                  <p className="list-item-mobile">Home</p>
                 </NavLink>
                 <NavLink
                   to="/about"
-                  activeClassName="selected"
+                  activeClassName="selected-mobile"
+                  className="link-text" 
                   onClick={toggleOpen}
                 >
-                  <li className="list-item-mobile">About</li>
+                  <p className="list-item-mobile">About</p>
                 </NavLink>
                 <NavLink
                   to="/work"
-                  activeClassName="selected"
+                  activeClassName="selected-mobile"
+                  className="link-text" 
+
                   onClick={toggleOpen}
                 >
-                  <li className="list-item-mobile">Work</li>
+                  <p className="list-item-mobile">Work</p>
                 </NavLink>
                 <li className="mobile-contact">Contact</li>
               </FadeIn>
