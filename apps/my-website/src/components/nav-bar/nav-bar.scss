@@ -74,30 +74,30 @@
     top: 4vh;
     bottom: 0;
     right: 0;
-    left: -30px;
+    left: -10vw;
 
     .inner-mobile-container {
       background-color: white;
       height: 100vh;
     }
-  }
 
-  li {
-    list-style-type: none;
-  }
+    li {
+      list-style-type: none;
+      text-decoration: none;
+    }
 
-  .list-item-mobile {
-    text-decoration: none;
-    color: black;
-    padding-bottom: 20px;
-    font-size: 30px;
-  }
+    .list-item-mobile {
+      color: black;
+      padding-bottom: 20px;
+      font-size: 30px;
+    }
 
-  .mobile-contact {
-    color: #557381;
-    text-decoration: none;
-    padding-bottom: 20px;
-    font-size: 30px;
+    .mobile-contact {
+      color: #557381;
+      padding-bottom: 20px;
+      font-size: 30px;
+      padding-bottom: 20vh;
+    }
   }
 }
 
