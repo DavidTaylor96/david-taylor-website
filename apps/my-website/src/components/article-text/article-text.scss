@@ -1,3 +1,12 @@
+$color-theme: #4f8689;
+$stripe-height: 7px;
+$btn-color: $color-theme;
+$btn-background: #fff;
+$btn-color-hover: $color-theme;
+$btn-background-hover: $color-theme;
+$border-color: $color-theme;
+$border-color-hover: $color-theme;
+
 .article-wrapper {
   display: flex;
   flex-direction: column;
@@ -10,37 +19,114 @@
     height: 3px;
     width: 130px;
     margin-bottom: 40px;
-    background-color: #4f8689;
+    background-color: $color-theme;
   }
 
-  .button {
+  @mixin reset-button {
+    overflow: visible;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    font: inherit;
+    line-height: normal;
+    cursor: pointer;
+    -moz-user-select: text;
+
+    &:-moz-focus-inner {
+      padding: 0;
+      border: 0;
+    }
+  }
+
+  @keyframes stripe-slide {
+    0% {
+      background-position: 0% 0;
+    }
+    100% {
+      background-position: 100% 0;
+    }
+  }
+
+  .btn {
+    @include reset-button;
     margin-top: 40px;
     margin-bottom: 30px;
     background-color: transparent;
-    border: 3px solid #4f8689;
-    border-radius: 10px;
+    border: 3px solid $border-color;
     cursor: pointer;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
     justify-content: space-between;
     max-width: 300px;
+    transition: all 0.5s ease;
+
+    &-stripe {
+      overflow: hidden;
+      position: relative;
+
+      &:after {
+        content: '';
+        display: block;
+        height: $stripe-height;
+        width: 100%;
+        background-image: repeating-linear-gradient(
+          45deg,
+          $border-color,
+          $border-color 1px,
+          transparent 2px,
+          transparent 5px
+        );
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        border-top: 1px solid $border-color;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background-size: $stripe-height $stripe-height;
+      }
+
+      &:hover {
+        color: $btn-color-hover;
+        border-color: $border-color-hover;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+        &:after {
+          background-image: repeating-linear-gradient(
+            45deg,
+            $btn-color-hover,
+            $btn-color-hover 1px,
+            transparent 2px,
+            transparent 5px
+          );
+          border-top: 1px solid $border-color-hover;
+          animation: stripe-slide 12s infinite linear forwards;
+        }
+      }
+    }
 
     .button-text {
       padding-left: 10px;
       padding-top: 3px;
-      padding-bottom: 3px;
+      padding-bottom: 7px;
+      color: $color-theme;
       text-align: left;
-      color: #4f8689;
     }
 
     #icon {
       display: flex;
       justify-content: center;
       align-items: center;
-      color: #4f8689;
+      color: $color-theme;
       height: 27px;
       width: 25px;
-    }    
+      padding-right: 10px;
+      padding-bottom: 3px;
+    }
+
+    &-radius {
+      border-radius: 12px;
+    }
   }
 }

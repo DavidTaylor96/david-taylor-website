@@ -68,6 +68,7 @@ const HomeScreen = () => {
           allows you to react and be agile in your approch to software.
         </ArticleScreen>
       </article>
+        <Flex auto className="bottom-padding"/>
     </section>
   );
 };

@@ -6,6 +6,7 @@ import { FindOutMore } from '../../components/find-out-more/find-out-more';
 
 import '../home/home-screen.scss';
 import { useIsMobile } from '../../hooks/use-is-mobile';
+import { Flex } from 'react-flex-lite';
 
 const AboutScreen = () => {
   const isNotMobile = useIsMobile();
@@ -50,6 +51,8 @@ const AboutScreen = () => {
           pass times is getting out on the water or up on the mountains.
         </ArticleScreen>
       </article>
+      <Flex auto className="bottom-padding"/>
+
     </section>
   );
 };

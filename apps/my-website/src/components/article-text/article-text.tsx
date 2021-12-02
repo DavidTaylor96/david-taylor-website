@@ -26,7 +26,11 @@ export const ArticleScreen: React.FC<IArticleScreenProps> = (props) => {
       <span id="separator" />
       <p data-aos="zoom-in">{props.children}</p>
       {props.button && (
-        <button className="button" onClick={props.onClick}>
+        // <button className="button" onClick={props.onClick}>
+        //   <p className="button-text">Learn more</p>
+        //   <FiArrowRight id="icon" />
+        // </button>
+        <button className="btn btn-stripe btn-radius" onClick={props.onClick}>
           <p className="button-text">Learn more</p>
           <FiArrowRight id="icon" />
         </button>
