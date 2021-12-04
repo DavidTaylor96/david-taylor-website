@@ -41,13 +41,18 @@ export const NavBar = () => {
               className="inner-mobile-container"
             >
               <FadeIn>
-                <NavLink to="/" activeClassName="selected-mobile" className="link-text" onClick={toggleOpen}>
+                <NavLink
+                  to="/"
+                  activeClassName="selected-mobile"
+                  className="link-text"
+                  onClick={toggleOpen}
+                >
                   <p className="list-item-mobile">Home</p>
                 </NavLink>
                 <NavLink
                   to="/about"
                   activeClassName="selected-mobile"
-                  className="link-text" 
+                  className="link-text"
                   onClick={toggleOpen}
                 >
                   <p className="list-item-mobile">About</p>
@@ -55,13 +60,19 @@ export const NavBar = () => {
                 <NavLink
                   to="/work"
                   activeClassName="selected-mobile"
-                  className="link-text" 
-
+                  className="link-text"
                   onClick={toggleOpen}
                 >
                   <p className="list-item-mobile">Work</p>
                 </NavLink>
-                <li className="mobile-contact">Contact</li>
+                <a
+                  href="mailto:david_taylor96@outlook.com?subject=Hello David!"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="mobile-contact"
+                >
+                  Contact
+                </a>
               </FadeIn>
             </Flex>
           </ul>
@@ -87,7 +98,14 @@ export const NavBar = () => {
         <NavLink to="/work" activeClassName="selected">
           <li className="list-item sliding">Work</li>
         </NavLink>
-        <li className="sliding contact">Contact</li>
+        <a
+          href="mailto:david_taylor96@outlook.com?subject=Hello David!"
+          target="_blank"
+          rel="noreferrer"
+          className="sliding contact"
+        >
+          Contact
+        </a>
       </ul>
     </Flex>
   );

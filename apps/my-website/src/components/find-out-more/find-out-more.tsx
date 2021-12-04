@@ -1,6 +1,5 @@
 import { FiArrowDown } from 'react-icons/fi';
 import { Link } from 'react-scroll';
-
 import './find-out-more.scss';
 
 interface IFindOutMore {
@@ -12,6 +11,8 @@ interface IFindOutMore {
 }
 
 export const FindOutMore = (props: IFindOutMore) => {
+
+
   return (
     <div
       className={`${
