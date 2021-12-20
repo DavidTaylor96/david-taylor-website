@@ -25,7 +25,7 @@ export const FindOutMore = (props: IFindOutMore) => {
         <div className="inner-container">
           <button className="small-button" onClick={props.onClick}>
             <p id="small-button-text">{props.buttonText}</p>
-            <FiArrowDown id="small-icon" />
+            <FiArrowDown id="small-icon" className='arrow'/>
           </button>
           <div className="down-line" />
         </div>
