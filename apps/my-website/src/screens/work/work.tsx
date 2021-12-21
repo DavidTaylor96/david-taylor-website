@@ -4,12 +4,14 @@ import { ArticleScreen } from '../../components/article-text/article-text';
 import { FindOutMore } from '../../components/find-out-more/find-out-more';
 import { ImageContainer } from '../../components/image-container/image-container';
 import { TechList } from '../../components/tech-list/tech-list';
+import { useIsLargeScreen } from '../../hooks/use-is-large-screen';
 import { useIsMobile } from '../../hooks/use-is-mobile';
 import '../home/home-screen.scss';
 import './work.scss';
 
 const WorkScreen = () => {
   const isNotMobile = useIsMobile();
+  const isLargeScreen = useIsLargeScreen();
 
   return (
     <section className="app">
@@ -25,7 +27,11 @@ const WorkScreen = () => {
       </header>
       {isNotMobile && (
         <div className="navigator-wrapper-left">
-          <FindOutMore buttonText={'My approach'} id={'about-me'} />
+          <FindOutMore
+            buttonText={'My approach'}
+            id={'about-me'}
+            largeScreen={isLargeScreen ? true : false}
+          />
         </div>
       )}
       <article className="wrapper reverse" id={'about-me'}>
@@ -48,6 +54,7 @@ const WorkScreen = () => {
             id={'my-work'}
             onRight={true}
             buttonText={'Technologies'}
+            largeScreen={isLargeScreen ? true : false}
           />
         </div>
       )}

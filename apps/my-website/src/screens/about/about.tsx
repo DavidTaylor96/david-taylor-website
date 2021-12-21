@@ -7,9 +7,11 @@ import { FindOutMore } from '../../components/find-out-more/find-out-more';
 import '../home/home-screen.scss';
 import { useIsMobile } from '../../hooks/use-is-mobile';
 import { Flex } from 'react-flex-lite';
+import { useIsLargeScreen } from '../../hooks/use-is-large-screen';
 
 const AboutScreen = () => {
   const isNotMobile = useIsMobile();
+  const isLargeScreen = useIsLargeScreen();
   return (
     <section className="app">
       <header className="welcome-wrapper">
@@ -22,7 +24,11 @@ const AboutScreen = () => {
       </header>
       {isNotMobile && (
         <div className="navigator-wrapper-left">
-          <FindOutMore buttonText={'Recent experience'} id={'about-me'} />
+          <FindOutMore
+            buttonText={'Recent experience'}
+            id={'about-me'}
+            largeScreen={isLargeScreen ? true : false}
+          />
         </div>
       )}
       <article className="wrapper reverse" id={'about-me'}>
@@ -39,6 +45,7 @@ const AboutScreen = () => {
             id={'my-work'}
             onRight={true}
             buttonText={'My passion'}
+            largeScreen={isLargeScreen ? true : false}
           />
         </div>
       )}
@@ -51,8 +58,7 @@ const AboutScreen = () => {
           pass times is getting out on the water or up on the mountains.
         </ArticleScreen>
       </article>
-      <Flex auto className="bottom-padding"/>
-
+      <Flex auto className="bottom-padding" />
     </section>
   );
 };

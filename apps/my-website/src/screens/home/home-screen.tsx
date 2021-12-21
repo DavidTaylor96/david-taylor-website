@@ -8,11 +8,13 @@ import { useHistory } from 'react-router-dom';
 import './home-screen.scss';
 import { Flex } from 'react-flex-lite';
 import { useIsMobile } from '../../hooks/use-is-mobile';
+import { useIsLargeScreen } from '../../hooks/use-is-large-screen';
 
 const HomeScreen = () => {
   const history = useHistory();
 
   const isNotMobile = useIsMobile();
+  const isLargeScreen = useIsLargeScreen();
 
   const handleAbout = () => {
     history.push('/about');
@@ -28,7 +30,11 @@ const HomeScreen = () => {
       </header>
       {isNotMobile && (
         <div className="navigator-wrapper-left">
-          <FindOutMore buttonText={'Find out more'} id={'about-me'} />
+          <FindOutMore
+            buttonText={'Find out more'}
+            id={'about-me'}
+            largeScreen={isLargeScreen ? true : false}
+          />
         </div>
       )}
       <article className="wrapper reverse" id={'about-me'}>
@@ -50,6 +56,7 @@ const HomeScreen = () => {
             id={'my-work'}
             onRight={true}
             buttonText={'My Approach'}
+            largeScreen={isLargeScreen ? true : false}
           />
         </div>
       )}
@@ -68,7 +75,7 @@ const HomeScreen = () => {
           allows you to react and be agile in your approch to software.
         </ArticleScreen>
       </article>
-        <Flex auto className="bottom-padding"/>
+      <Flex auto className="bottom-padding" />
     </section>
   );
 };
