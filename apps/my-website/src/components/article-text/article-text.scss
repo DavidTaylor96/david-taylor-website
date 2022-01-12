@@ -61,6 +61,7 @@ $border-color-hover: $color-theme;
     justify-content: space-between;
     max-width: 300px;
     transition: all 0.5s ease;
+    text-decoration: none;
 
     &-stripe {
       overflow: hidden;

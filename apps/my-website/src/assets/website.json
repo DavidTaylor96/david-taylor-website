@@ -1,0 +1,105 @@
+{
+  "routes": [
+    {
+      "name": "home",
+      "title": "Home",
+      "path": "/",
+      "exact": true,
+      "dark": true,
+      "pages": [
+        {
+          "title": "About",
+          "type": "basic-layout",
+          "image": "",
+          "text": "Innovative and self-motivated software developer with good problem-solving skills and a strong desire for continuous learning. committed to continuing my progress and eager to develop my professional development",
+          "actions": [
+            {
+              "title": "Learn More",
+              "link": "/design"
+            }
+          ]
+        },
+        {
+          "title": "Home",
+          "type": "basic-layout",
+          "text": "Innovative and self-motivated software developer with good problem-solving skills and a strong desire for continuous learning. committed to continuing my progress and eager to develop my professional development",
+          "actions": [
+            {
+              "title": "Learn More",
+              "link": "/design"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "about",
+      "title": "About",
+      "path": "/about",
+      "exact": true,
+      "dark": true,
+      "pages": [
+        {
+          "title": "something",
+          "type": "basic-layout",
+          "text": "Innovative and self-motivated software developer with good problem-solving skills and a strong desire for continuous learning. committed to continuing my progress and eager to develop my professional development",
+          "hiddenButton": true,
+          "actions": [
+            {
+              "title": "Learn More",
+              "link": "/design"
+            }
+          ]
+        },
+        {
+          "title": "something",
+          "type": "basic-layout",
+          "text": "Innovative and self-motivated software developer with good problem-solving skills and a strong desire for continuous learning. committed to continuing my progress and eager to develop my professional development",
+          "hiddenButton": true,
+
+          "actions": [
+            {
+              "title": "Learn More",
+              "link": "/design"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "work",
+      "title": "Work",
+      "path": "/work",
+      "exact": true,
+      "dark": true,
+      "pages": [
+        {
+          "title": "About",
+          "type": "basic-layout",
+          "text": "Innovative and self-motivated software developer with good problem-solving skills and a strong desire for continuous learning. committed to continuing my progress and eager to develop my professional development",
+          "hiddenButton": true,
+
+          "actions": [
+            {
+              "title": "Learn More",
+              "link": "/design"
+            }
+          ]
+        },
+        {
+          "title": "Home",
+          "type": "basic-layout",
+          "text": "Innovative and self-motivated software developer with good problem-solving skills and a strong desire for continuous learning. committed to continuing my progress and eager to develop my professional development",
+          "hiddenButton": true,
+
+          "actions": [
+            {
+              "title": "Learn More",
+              "link": "/design"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
