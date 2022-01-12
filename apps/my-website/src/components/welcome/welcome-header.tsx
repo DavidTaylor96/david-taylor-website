@@ -22,10 +22,10 @@ export const WelcomeHeader = () => {
         data-aos-duration="2000"
         id="name-logo"
         src={NameLogo}
-        alt="image of david taylor"
+        alt="david taylor"
       />
       <h3 id="welcome-sub-text">
-        <i>creative developer</i>
+        <i>Creative developer</i>
       </h3>
     </header>
   );

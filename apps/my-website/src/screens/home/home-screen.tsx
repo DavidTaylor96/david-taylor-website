@@ -70,9 +70,9 @@ const HomeScreen = () => {
           button={true}
           onClick={handleWork}
         >
-          I believe in a proactive approch to software deveopment. Understanding
+          I believe in a proactive approach to software development. Understanding
           the bigger picture and making sure everyone is on the same page. This
-          allows you to react and be agile in your approch to software.
+          allows you to be proactive not reactive your approach to software.
         </ArticleScreen>
       </article>
       <Flex auto className="bottom-padding" />
