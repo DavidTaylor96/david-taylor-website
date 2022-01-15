@@ -42,7 +42,7 @@
       "pages": [
         {
           "title": "About me",
-          "type": "basic-right-layout",
+          "type": "basic-layout",
           "text": "Software developer currently based in Edinburgh, Scotland. Passionate developer that believes in bringing ideas to life through creative UI, fast website with great SEO and fantastic user journeys to give the best customer experience.",
           "hiddenButton": true,
           "actions": []
@@ -77,7 +77,7 @@
       "pages": [
         {
           "title": "About my work",
-          "type": "basic-right-layout",
+          "type": "basic-layout",
           "text": "I enjoy working with forward-thinking people to build interactive, accessible products. From working on projects from 3D e-commerce sites, App to track lyme disease and a social media scheduled app. Through these experiences I have learn’t the importance of planning and forwarded-thinking. This allows me and the people i work with to finish projects on time.",
           "hiddenButton": true,
 

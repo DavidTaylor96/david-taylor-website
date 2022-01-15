@@ -1,6 +1,7 @@
 import React, { FC, useEffect } from 'react';
 import { useRouteStore } from '../hooks/use-route';
 import { ILayout, IRoute } from '../service/website-types';
+import BasicLayout from './basic-layout/basic-layout';
 import BasicLeftLayout from './basic-layout/basic-left-layout';
 import BasicRightLayout from './basic-layout/basic-right-layout';
 
@@ -15,6 +16,8 @@ export const PageComponent: FC<IPageComponent> = ({ content }) => {
       return <BasicRightLayout content={content} />;
     case "basic-left-layout":
       return <BasicLeftLayout content={content} />;
+    case "basic-layout":
+      return <BasicLayout content={content} />;
     default:
       return null;
   }
