@@ -62,6 +62,14 @@ export const NavBar: FC<NavBarProps> = ({ content }) => {
                       </NavLink>
                     );
                   })}
+                <a
+                  href="mailto:david_taylor96@outlook.com?subject=Hello David!"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="mobile-contact"
+                >
+                  Contact
+                </a>
               </Flex>
             </FadeIn>
           </ul>
@@ -74,6 +82,7 @@ export const NavBar: FC<NavBarProps> = ({ content }) => {
       <NavLink to={'/'}>
         <img id="image-logo" src={Logo} alt="image of david taylor" />
       </NavLink>
+      <Flex auto />
       {content
         .filter((route) => !route.navBarHidden)
         .map((route, index) => {
@@ -83,6 +92,14 @@ export const NavBar: FC<NavBarProps> = ({ content }) => {
             </NavLink>
           );
         })}
+         <a
+          href="mailto:david_taylor96@outlook.com?subject=Hello David!"
+          target="_blank"
+          rel="noreferrer"
+          className="sliding contact"
+        >
+          Contact
+        </a>
     </Flex>
   );
 };
