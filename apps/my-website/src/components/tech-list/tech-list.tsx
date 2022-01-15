@@ -3,12 +3,14 @@ import { FiArrowRight, FiChevronRight } from 'react-icons/fi';
 import React from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { IRoute, ITechListLayout } from '../../service/website-types';
 
 interface ITechListProps {
-  articleHeader: string;
+  content: ITechListLayout;
+  route: IRoute;
 }
 
-export const TechList: React.FC<ITechListProps> = (props) => {
+export const TechListLayout: React.FC<ITechListProps> = ({ content }) => {
   AOS.init({
     delay: 200,
     duration: 1000,
@@ -18,36 +20,24 @@ export const TechList: React.FC<ITechListProps> = (props) => {
 
   return (
     <section className="tech-wrapper">
-      <h1 className="header"  data-aos="fade-right" data-aos-delay="300" >{props.articleHeader}</h1>
-      <span  id="separator" className="header" />
+      <h1 className="header" data-aos="fade-right" data-aos-delay="300">
+        {content.title}
+      </h1>
+      <span id="separator" className="header" />
       <div className="list-inner-wrapper">
         <section className="list-container">
-          <div className="inner-list">
-            <FiChevronRight id="logo" />
-            <p id="list-element" data-aos="zoom-out">React js</p>
-          </div>
-          <div className="inner-list">
-            <FiChevronRight id="logo" />
-            <p id="list-element" data-aos="zoom-out">React Native</p>
-          </div>
-          <div className="inner-list">
-            <FiChevronRight id="logo" />
-            <p id="list-element" data-aos="zoom-out">Expo</p>
-          </div>
-        </section>
-        <section className="list-container">
-          <div className="inner-list">
-            <FiChevronRight id="logo" />
-            <p id="list-element" data-aos="zoom-out">Node js</p>
-          </div>
-          <div className="inner-list">
-            <FiChevronRight id="logo" />
-            <p id="list-element" data-aos="zoom-out">Express </p>
-          </div>
-          <div className="inner-list">
-            <FiChevronRight id="logo" />
-            <p id="list-element" data-aos="zoom-out">Mongodb</p>
-          </div>
+          {content.actions.map((lng, index) => {
+            return (
+              <section className="list-container">
+                <div className="inner-list">
+                  <FiChevronRight id="logo" />
+                  <p id="list-element" data-aos="zoom-out" key={index}>
+                    {lng.title}
+                  </p>
+                </div>
+              </section>
+            );
+          })}
         </section>
       </div>
     </section>

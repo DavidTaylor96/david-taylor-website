@@ -1,0 +1,148 @@
+{
+  "routes": [
+    {
+      "name": "home",
+      "title": "Home",
+      "path": "/",
+      "exact": true,
+      "dark": true,
+      "pages": [
+        {
+          "showWelcome": true,
+          "buttonText": "Find out more",
+          "id": "about-me",
+          "title": "About",
+          "type": "basic-right-layout",
+          "text": "Innovative and self-motivated software developer with good problem-solving skills and a strong desire for continuous learning. committed to continuing my progress and eager to develop my professional development",
+          "image": "./assets/profile-main.svg",
+          "actions": [
+            {
+              "title": "Learn More",
+              "link": "/about"
+            }
+          ]
+        },
+        {
+          "title": "Work",
+          "id": "work",
+          "buttonText": "My Approach",
+          "type": "basic-left-layout",
+          "text": "Innovative and self-motivated software developer with good problem-solving skills and a strong desire for continuous learning. committed to continuing my progress and eager to develop my professional development",
+          "image": "./assets/computer-plant-and-books.svg",
+          "actions": [
+            {
+              "title": "Learn More",
+              "link": "/work"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "about",
+      "title": "About",
+      "path": "/about",
+      "exact": true,
+      "dark": true,
+      "pages": [
+        {
+          "showWelcome": false,
+          "hiddenButton": true,
+          "title": "About me",
+          "type": "basic-layout",
+          "text": "Software developer currently based in Edinburgh, Scotland. Passionate developer that believes in bringing ideas to life through creative UI, fast website with great SEO and fantastic user journeys to give the best customer experience.",
+          "actions": []
+        },
+        {
+          "title": "Recent experience",
+          "id": "Recent-experience",
+          "type": "basic-right-layout",
+          "buttonText": "recent experience",
+          "text": "I am currently working with a small start up software consultancy firm based in Edinburgh. Through is I have worked on many different projects. To deliver fast and effective solutions.",
+          "image": "./assets/profile-at-desk.svg",
+          "hiddenButton": true,
+          "showWelcome": false,
+          "actions": []
+        },
+        {
+          "title": "My Passions",
+          "id": "My-passions",
+          "buttonText": "My passions",
+          "type": "basic-left-layout",
+          "text": "Growing up in the Highlands of Scotland. I was always by actives. I became an outdoor instructor and had the opportunity to teach all over the EU One of my favorite pass times is getting out on the water or up on the mountains.",
+          "image": "./assets/mountains.svg",
+          "hiddenButton": true,
+          "showWelcome": false,
+          "actions": []
+        }
+      ]
+    },
+    {
+      "name": "work",
+      "title": "Work",
+      "path": "/work",
+      "exact": true,
+      "dark": true,
+      "showWelcome": false,
+      "pages": [
+        {
+          "title": "About my work",
+          "type": "basic-layout",
+          "text": "I enjoy working with forward-thinking people to build interactive, accessible products. From working on projects from 3D e-commerce sites, App to track lyme disease and a social media scheduled app. Through these experiences I have learn’t the importance of planning and forwarded-thinking. This allows me and the people i work with to finish projects on time.",
+          "hiddenButton": true,
+          "showWelcome": false,
+          "actions": []
+        },
+        {
+          "title": "My approach",
+          "id": "My-approach",
+          "buttonText": "My approach",
+          "type": "basic-right-layout",
+          "text": "No two projects are the same and I take a  approach to each projects I take on, focussing on delivering work that as accessible and optimized as possible.",
+          "image": "./assets/notice-board.svg",
+          "showWelcome": false,
+          "hiddenButton": true,
+          "actions": []
+        },
+        {
+          "type": "tech-list",
+          "title": "Technologies worked with recently",
+          "Languages": [
+            "React js",
+            "React Native",
+            "Expo",
+            "Node js",
+            "Express",
+            "MongoDb"
+          ],
+          "actions": [
+            {
+              "title": "React js",
+              "link": ""
+            },
+            {
+              "title": "React Native",
+              "link": ""
+            },
+            {
+              "title": "Expo",
+              "link": ""
+            },
+            {
+              "title": "Node js",
+              "link": ""
+            },
+            {
+              "title": "Express",
+              "link": ""
+            },
+            {
+              "title": "MongoDb",
+              "link": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
