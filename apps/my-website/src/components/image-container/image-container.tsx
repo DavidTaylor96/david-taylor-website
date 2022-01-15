@@ -20,7 +20,7 @@ export const ImageContainer: React.FC<IImageContainerProps> = (props) => {
   return (
     <section className="image-container"  data-aos="fade-up-right">
       <div className="image-wrapper">
-        <img src={props.image} className="image" />
+        <img src={props.image} className="image" alt='profile of david' />
       </div>
     </section>
   );

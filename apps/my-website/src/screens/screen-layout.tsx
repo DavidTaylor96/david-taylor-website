@@ -1,7 +1,8 @@
 import React, { FC, useEffect } from 'react';
 import { useRouteStore } from '../hooks/use-route';
 import { ILayout, IRoute } from '../service/website-types';
-import BasicLayout from './home/home-screen';
+import BasicLeftLayout from './basic-layout/basic-left-layout';
+import BasicRightLayout from './basic-layout/basic-right-layout';
 
 
 interface IPageComponent {
@@ -10,8 +11,10 @@ interface IPageComponent {
 
 export const PageComponent: FC<IPageComponent> = ({ content }) => {
   switch (content.type) {
-    case "basic-layout":
-      return <BasicLayout content={content} />;
+    case "basic-right-layout":
+      return <BasicRightLayout content={content} />;
+    case "basic-left-layout":
+      return <BasicLeftLayout content={content} />;
     default:
       return null;
   }

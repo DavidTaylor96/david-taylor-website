@@ -1,25 +1,22 @@
+import { FC } from 'react';
+import { Flex } from 'react-flex-lite';
+import ProfileMain from '../../assets/profile-main.svg';
 import {
   ArticleButton,
-  ArticleScreen,
+  ArticleScreen
 } from '../../components/article-text/article-text';
-import { ImageContainer } from '../../components/image-container/image-container';
-import { WelcomeHeader } from '../../components/welcome/welcome-header';
-import Computer from '../../assets/computer-plant-and-books.svg';
 import { FindOutMore } from '../../components/find-out-more/find-out-more';
-import ProfileMain from '../../assets/profile-main.svg';
-import { useHistory } from 'react-router-dom';
-import './home-screen.scss';
-import { Flex } from 'react-flex-lite';
-import { useIsMobile } from '../../hooks/use-is-mobile';
+import { ImageContainer } from '../../components/image-container/image-container';
 import { useIsLargeScreen } from '../../hooks/use-is-large-screen';
+import { useIsMobile } from '../../hooks/use-is-mobile';
 import { IBasicLayout } from '../../service/website-types';
-import { FC } from 'react';
+import './basic-layout.scss';
 
 export interface IBasicLayoutProps {
   content: IBasicLayout;
 }
 
-const BasicLayout: FC<IBasicLayoutProps> = ({ content }) => {
+const BasicRightLayout: FC<IBasicLayoutProps> = ({ content }) => {
   const isNotMobile = useIsMobile();
   const isLargeScreen = useIsLargeScreen();
 
@@ -52,11 +49,11 @@ const BasicLayout: FC<IBasicLayoutProps> = ({ content }) => {
             </>
           )}
         </ArticleScreen>
-        <ImageContainer image={ProfileMain} />
+        <ImageContainer image={content.image} />
       </article>
       <Flex auto className="bottom-padding" />
     </section>
   );
 };
 
-export default BasicLayout;
+export default BasicRightLayout;
