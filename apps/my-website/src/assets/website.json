@@ -95,21 +95,40 @@
           "actions": []
         },
         {
-          "type": "footer",
-          "title": "",
-          "hideScrollWheel": true,
+          "type": "tech-list",
+          "title": "Technologies worked with recently",
+          "Languages": [
+            "React js",
+            "React Native",
+            "Expo",
+            "Node js",
+            "Express",
+            "MongoDb"
+          ],
           "actions": [
             {
-              "title": "Design",
-              "link": "/design"
+              "title": "React js",
+              "link": ""
             },
             {
-              "title": "Software",
-              "link": "/software"
+              "title": "React Native",
+              "link": ""
             },
             {
-              "title": "Production",
-              "link": "/production"
+              "title": "Expo",
+              "link": ""
+            },
+            {
+              "title": "Node js",
+              "link": ""
+            },
+            {
+              "title": "Express",
+              "link": ""
+            },
+            {
+              "title": "MongoDb",
+              "link": ""
             }
           ]
         }

@@ -10,11 +10,12 @@ import { ImageContainer } from '../../components/image-container/image-container
 import { WelcomeHeader } from '../../components/welcome/welcome-header';
 import { useIsLargeScreen } from '../../hooks/use-is-large-screen';
 import { useIsMobile } from '../../hooks/use-is-mobile';
-import { IBasicLayout } from '../../service/website-types';
+import { IBasicLayout, IRoute } from '../../service/website-types';
 import './basic-layout.scss';
 
 export interface IBasicLayoutProps {
   content: IBasicLayout;
+  route: IRoute;
 }
 
 const BasicLeftLayout: FC<IBasicLayoutProps> = ({ content }) => {

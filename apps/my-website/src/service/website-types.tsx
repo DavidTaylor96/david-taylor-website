@@ -18,21 +18,22 @@ export interface IBaseLayout {
   type: string;
   title: string;
   text: string;
-  video: string;
   hiddenButton?: boolean;
   actions: Action[];
   image: string;
   showWelcome: boolean;
 }
 
-// eslint-disable-next-line @typescript-eslint/no-empty-interface
-export interface ITransparentLayout extends IBaseLayout {}
+export interface ITechListLayout {
+  actions: Action[];
+  type: string;
+  title: string;
+}
 
-// eslint-disable-next-line @typescript-eslint/no-empty-interface
-export interface ISolidLayout extends IBaseLayout {}
 
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
 export interface IBasicLayout extends IBaseLayout {}
+
 
 
 export interface IRoute {
@@ -50,4 +51,4 @@ export interface Website {
   routes: IRoute[];
 }
 
-export type ILayout = ITransparentLayout | ISolidLayout;
+export type ILayout = IBaseLayout;

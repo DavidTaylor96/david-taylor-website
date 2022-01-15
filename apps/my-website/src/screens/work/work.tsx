@@ -3,7 +3,7 @@ import Noticeboard from '../../assets/notice-board.svg';
 import { ArticleScreen } from '../../components/article-text/article-text';
 import { FindOutMore } from '../../components/find-out-more/find-out-more';
 import { ImageContainer } from '../../components/image-container/image-container';
-import { TechList } from '../../components/tech-list/tech-list';
+import { TechListLayout } from '../../components/tech-list/tech-list';
 import { useIsLargeScreen } from '../../hooks/use-is-large-screen';
 import { useIsMobile } from '../../hooks/use-is-mobile';
 import '../basic-layout/home-screen.scss';
@@ -58,9 +58,6 @@ const WorkScreen = () => {
           />
         </div>
       )}
-      <article className="wrapper" id={'my-work'}>
-        <TechList articleHeader={'My passions'} />
-      </article>
     </section>
   );
 };
