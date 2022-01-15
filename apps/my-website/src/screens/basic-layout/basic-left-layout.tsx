@@ -7,6 +7,7 @@ import {
 } from '../../components/article-text/article-text';
 import { FindOutMore } from '../../components/find-out-more/find-out-more';
 import { ImageContainer } from '../../components/image-container/image-container';
+import { WelcomeHeader } from '../../components/welcome/welcome-header';
 import { useIsLargeScreen } from '../../hooks/use-is-large-screen';
 import { useIsMobile } from '../../hooks/use-is-mobile';
 import { IBasicLayout } from '../../service/website-types';
@@ -22,9 +23,6 @@ const BasicLeftLayout: FC<IBasicLayoutProps> = ({ content }) => {
 
   return (
     <section className="app">
-      {/* <header className="welcome-wrapper">
-        <WelcomeHeader />
-      </header> */}
       {isNotMobile && (
         <div className="navigator-wrapper-left">
           <FindOutMore

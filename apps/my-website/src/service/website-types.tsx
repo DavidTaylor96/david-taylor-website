@@ -22,6 +22,7 @@ export interface IBaseLayout {
   hiddenButton?: boolean;
   actions: Action[];
   image: string;
+  showWelcome: boolean;
 }
 
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
