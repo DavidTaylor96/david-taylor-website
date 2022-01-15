@@ -36,7 +36,36 @@ export const NavBar: FC<NavBarProps> = ({ content }) => {
           </Flex>
         </NavLink>
         <Flex auto />
-        
+        <Hamburger toggled={isOpen} toggle={toggleOpen} color={'#557381'} />
+        {isOpen && (
+          <ul className="nav-bar-mobile-container">
+            <FadeIn>
+              <Flex
+                auto
+                column
+                align={'center'}
+                justify={'center'}
+                className="inner-mobile-container"
+              >
+                {content
+                  .filter((route) => !route.navBarHidden)
+                  .map((route, index) => {
+                    return (
+                      <NavLink
+                        key={index}
+                        to={route.path}
+                        activeClassName="selected-mobile"
+                        className="link-text"
+                        onClick={toggleOpen}
+                      >
+                        <p className="list-item-mobile">{route.title}</p>
+                      </NavLink>
+                    );
+                  })}
+              </Flex>
+            </FadeIn>
+          </ul>
+        )}
       </Flex>
     );
   }

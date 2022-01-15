@@ -12,11 +12,9 @@
     background-color: #4f8689;
   }
 
-
   .list-inner-wrapper {
     display: flex;
     flex-flow: row wrap;
- 
 
     .inner-list {
       display: flex;
@@ -31,13 +29,12 @@
       flex-flow: column wrap;
       height: 50%;
 
-
       #list-element {
         padding-top: 10px;
         padding-bottom: 10px;
         flex-direction: row;
       }
-      
+
       #logo {
         display: flex;
         justify-content: center;
@@ -50,19 +47,15 @@
   }
 }
 
-
-
 @media only screen and (max-width: 1024px) {
-
-  .tech-wrapper{
-    display: flex; 
+  .tech-wrapper {
+    display: flex;
     flex: auto;
-    width: 90%;
-      
-          #list-element{
-            font-size: 16px;
-          }
-  
-  }
- }
+    margin-right: 25px;
+    margin-left: 25px;
 
+    #list-element {
+      font-size: 16px;
+    }
+  }
+}
