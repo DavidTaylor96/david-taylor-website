@@ -6,7 +6,7 @@
     "nx": "nx",
     "start": "nx serve --host 0.0.0.0",
     "network": "nx serve networks-web",
-    "build": "nx build",
+    "build:my-website": "npm --prefix my-website run build",
     "test": "nx test",
     "lint": "nx workspace-lint && nx lint",
     "e2e": "nx e2e",
