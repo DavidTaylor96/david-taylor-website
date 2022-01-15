@@ -34,7 +34,7 @@ const BasicLeftLayout: FC<IBasicLayoutProps> = ({ content }) => {
           />
         </div>
       )}
-      <article className="wrapper reverse" id={content.title}>
+      <article className="wrapper" id={content.title}>
         <ImageContainer image={content.image} />
         <ArticleScreen articleHeader={content.title} button={true}>
           {content.text}

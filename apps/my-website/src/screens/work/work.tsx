@@ -6,7 +6,7 @@ import { ImageContainer } from '../../components/image-container/image-container
 import { TechList } from '../../components/tech-list/tech-list';
 import { useIsLargeScreen } from '../../hooks/use-is-large-screen';
 import { useIsMobile } from '../../hooks/use-is-mobile';
-import '../home/home-screen.scss';
+import '../basic-layout/home-screen.scss';
 import './work.scss';
 
 const WorkScreen = () => {
