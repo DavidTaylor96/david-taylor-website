@@ -32,13 +32,13 @@ const BasicRightLayout: FC<IBasicLayoutProps> = ({ content }) => {
       {isNotMobile && (
         <div className="navigator-wrapper-left">
           <FindOutMore
-            buttonText={'Find out more'}
-            id={'about-me'}
+            buttonText={content.buttonText}
+            id={content.id}
             largeScreen={isLargeScreen ? true : false}
           />
         </div>
       )}
-      <article className="wrapper reverse" id={content.title}>
+      <article className="wrapper reverse" id={content.id}>
         <ArticleScreen articleHeader={content.title} button={true}>
           {content.text}
           {!content.hiddenButton && (

@@ -25,15 +25,16 @@ const BasicLeftLayout: FC<IBasicLayoutProps> = ({ content }) => {
   return (
     <section className="app">
       {isNotMobile && (
-        <div className="navigator-wrapper-left">
+        <div className="navigator-wrapper-right">
           <FindOutMore
-            buttonText={'Find out more'}
-            id={'about-me'}
+            id={content.id}
+            onRight={true}
+            buttonText={content.buttonText}
             largeScreen={isLargeScreen ? true : false}
           />
         </div>
       )}
-      <article className="wrapper" id={content.title}>
+      <article className="wrapper" id={content.id}>
         <ImageContainer image={content.image} />
         <ArticleScreen articleHeader={content.title} button={true}>
           {content.text}

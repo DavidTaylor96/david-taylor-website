@@ -22,6 +22,8 @@ export interface IBaseLayout {
   actions: Action[];
   image: string;
   showWelcome: boolean;
+  id: string;
+  buttonText: string;
 }
 
 export interface ITechListLayout {

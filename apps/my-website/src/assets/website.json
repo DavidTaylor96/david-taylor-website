@@ -9,6 +9,8 @@
       "pages": [
         {
           "showWelcome": true,
+          "buttonText": "Find out more",
+          "id": "about-me",
           "title": "About",
           "type": "basic-right-layout",
           "text": "Innovative and self-motivated software developer with good problem-solving skills and a strong desire for continuous learning. committed to continuing my progress and eager to develop my professional development",
@@ -22,6 +24,8 @@
         },
         {
           "title": "Work",
+          "id": "work",
+          "buttonText": "My Approach",
           "type": "basic-left-layout",
           "text": "Innovative and self-motivated software developer with good problem-solving skills and a strong desire for continuous learning. committed to continuing my progress and eager to develop my professional development",
           "image": "./assets/computer-plant-and-books.svg",
@@ -51,7 +55,9 @@
         },
         {
           "title": "Recent experience",
+          "id": "Recent-experience",
           "type": "basic-right-layout",
+          "buttonText": "recent experience",
           "text": "I am currently working with a small start up software consultancy firm based in Edinburgh. Through is I have worked on many different projects. To deliver fast and effective solutions.",
           "image": "./assets/profile-at-desk.svg",
           "hiddenButton": true,
@@ -60,6 +66,8 @@
         },
         {
           "title": "My Passions",
+          "id": "My-passions",
+          "buttonText": "My passions",
           "type": "basic-left-layout",
           "text": "Growing up in the Highlands of Scotland. I was always by actives. I became an outdoor instructor and had the opportunity to teach all over the EU One of my favorite pass times is getting out on the water or up on the mountains.",
           "image": "./assets/mountains.svg",
@@ -87,6 +95,8 @@
         },
         {
           "title": "My approach",
+          "id": "My-approach",
+          "buttonText": "My approach",
           "type": "basic-right-layout",
           "text": "No two projects are the same and I take a  approach to each projects I take on, focussing on delivering work that as accessible and optimized as possible.",
           "image": "./assets/notice-board.svg",
