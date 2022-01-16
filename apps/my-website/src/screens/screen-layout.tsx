@@ -20,7 +20,7 @@ export const PageComponent: FC<IPageComponent> = ({ content, route }) => {
     case 'basic-layout':
       return <BasicLayout route={route} content={content} />;
     case 'tech-list':
-      return <TechListLayout route={route} content={content} />;
+      return <TechListLayout scrollIndicator={content} route={route} content={content} />;
     default:
       return null;
   }

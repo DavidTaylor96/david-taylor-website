@@ -106,6 +106,8 @@
         },
         {
           "type": "tech-list",
+          "id": "Technologies",
+          "buttonText": "Technologies",
           "title": "Technologies worked with recently",
           "Languages": [
             "React js",

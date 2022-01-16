@@ -14,9 +14,6 @@
   }
 }
 
-.bottom-padding{
-  height: 15vh;
-}
 
 .wrapper {
   display: flex;
@@ -27,7 +24,7 @@
 }
 
 .welcome-wrapper{
-  height: 75vh;
+  height: 70vh;
   display: flex;
   flex-basis: 100%;
   flex-flow: row;
@@ -38,7 +35,7 @@
 .navigator-wrapper-left {
   display: flex;
   flex: auto;
-  padding-left: 100px;
+  padding-left: 30px;
 }
 
 .navigator-wrapper-right {
