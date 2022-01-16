@@ -1,0 +1,14 @@
+.welcome-wrapper{
+  height: 70vh;
+  display: flex;
+  flex-basis: 100%;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.navigator-wrapper-left {
+  display: flex;
+  flex: auto;
+  padding-left: 30px;
+}

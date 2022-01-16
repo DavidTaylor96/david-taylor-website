@@ -12,6 +12,7 @@ import { useIsLargeScreen } from '../../hooks/use-is-large-screen';
 import { useIsMobile } from '../../hooks/use-is-mobile';
 import { IBasicLayout, IRoute } from '../../service/website-types';
 import './basic-layout.scss';
+import './basic-right-layout.scss'
 
 export interface IBasicLayoutProps {
   content: IBasicLayout;

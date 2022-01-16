@@ -12,3 +12,76 @@
     z-index: 999;
   }
 }
+
+
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s ease;
+}
+
+
+h1 {
+  font-size: 42px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 37px;
+  font-weight: 400;
+
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  font-size: 31px;
+  font-weight: 400;
+
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-size: 19px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+
+
+@media only screen and (max-width: 1024px) {
+  
+  h1 {
+    font-size: 30px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h2 {
+    font-size: 32px;
+    font-weight: 400;
+  
+    margin: 0;
+    padding: 0;
+  }
+  
+  h3 {
+    font-size: 26px;
+    font-weight: 400;
+  
+    margin: 0;
+    padding: 0;
+  }
+  
+  p {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+  }
+}
