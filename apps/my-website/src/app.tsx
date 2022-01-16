@@ -1,5 +1,5 @@
 import React, { Suspense } from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, HashRouter, Route, Switch } from 'react-router-dom';
 import useFetch from 'use-http';
 import './app.scss';
 import { NavBar } from './components/nav-bar/nav-bar';
@@ -17,7 +17,7 @@ export const App = () => {
   );
   if (!data) return null;
   return (
-    <Router basename={process.env.NX_BASE_HREF} >
+    <HashRouter >
       <ScrollToTop />
       <Switch>
         <Route path="/">
@@ -41,7 +41,7 @@ export const App = () => {
           </section>
         </Route>
       </Switch>
-    </Router>
+    </HashRouter>
   );
 };
 
