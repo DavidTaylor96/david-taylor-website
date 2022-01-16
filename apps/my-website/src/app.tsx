@@ -17,7 +17,7 @@ export const App = () => {
   );
   if (!data) return null;
   return (
-    <HashRouter >
+    <Router >
       <ScrollToTop />
       <Switch>
         <Route path="/">
@@ -41,7 +41,7 @@ export const App = () => {
           </section>
         </Route>
       </Switch>
-    </HashRouter>
+    </Router>
   );
 };
 
