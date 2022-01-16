@@ -17,7 +17,7 @@ export const App = () => {
   );
   if (!data) return null;
   return (
-    <Router>
+    <Router basename={process.env.NX_BASE_HREF} >
       <ScrollToTop />
       <Switch>
         <Route path="/">
