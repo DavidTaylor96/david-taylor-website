@@ -1,5 +1,6 @@
 import { FC } from 'react';
 import { Flex } from 'react-flex-lite';
+import { FiArrowDown } from 'react-icons/fi';
 import ProfileMain from '../../assets/profile-main.svg';
 import {
   ArticleButton,
@@ -11,7 +12,7 @@ import { WelcomeHeader } from '../../components/welcome/welcome-header';
 import { useIsLargeScreen } from '../../hooks/use-is-large-screen';
 import { useIsMobile } from '../../hooks/use-is-mobile';
 import { IBasicLayout, IRoute } from '../../service/website-types';
-import './basic-right-layout.scss'
+import './basic-right-layout.scss';
 
 export interface IBasicLayoutProps {
   content: IBasicLayout;
@@ -19,7 +20,7 @@ export interface IBasicLayoutProps {
 }
 
 const BasicRightLayout: FC<IBasicLayoutProps> = ({ content }) => {
-  const isNotMobile = useIsMobile();
+  const isMobile = useIsMobile();
   const isLargeScreen = useIsLargeScreen();
 
   return (
@@ -29,7 +30,7 @@ const BasicRightLayout: FC<IBasicLayoutProps> = ({ content }) => {
           <WelcomeHeader />
         </header>
       )}
-      {isNotMobile && (
+      {isMobile && (
         <div className="navigator-wrapper-left">
           <FindOutMore
             buttonText={content.buttonText}
