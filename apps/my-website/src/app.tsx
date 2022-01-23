@@ -23,10 +23,10 @@ export const App = () => {
       <ScrollToTop />
       <Switch>
         <Route path="/">
-          <section className="main-wrapper-position">
-            <div className="nav-bar-position">
+          <article className="main-wrapper-position">
+            <section className="nav-bar-position">
               <NavBar   content={data.routes} />
-            </div>
+            </section>
             <Switch>
               {data.routes
               .filter((route) => !route.hideButton)
@@ -40,7 +40,7 @@ export const App = () => {
                 );
               })}
             </Switch>
-          </section>
+          </article>
         </Route>
       </Switch>
     </Router>

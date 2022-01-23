@@ -4,8 +4,6 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 export const WelcomeHeader = () => {
-
-
   AOS.init({
     once: true,
     delay: 500,
@@ -15,7 +13,7 @@ export const WelcomeHeader = () => {
 
   return (
     <header className="welcome-header">
-      <h1 id="welcome-text">Hello, my name is</h1>
+      <h2 id="welcome-text">Hello, my name is</h2>
       <img
         data-aos="fade-right"
         data-aos-delay="300"

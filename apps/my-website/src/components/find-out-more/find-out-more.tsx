@@ -14,7 +14,7 @@ export const FindOutMore = (props: IFindOutMore) => {
 
 
   return (
-    <div
+    <section
       className={`${
         props.onRight
           ? 'wrapper-right-find-out-more'
@@ -30,6 +30,6 @@ export const FindOutMore = (props: IFindOutMore) => {
           <div className="down-line" />
         </div>
       </Link>
-    </div>
+    </section>
   );
 };

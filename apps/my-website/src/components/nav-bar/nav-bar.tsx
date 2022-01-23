@@ -80,7 +80,7 @@ export const NavBar: FC<NavBarProps> = ({ content }) => {
   return (
     <Flex auto className="nav-bar">
       <NavLink to={'/'}>
-        <img id="image-logo" src={Logo} alt="image of david taylor" />
+        <img id="image-logo" src={Logo} alt="david taylor" />
       </NavLink>
       <Flex auto />
       {content
@@ -88,18 +88,20 @@ export const NavBar: FC<NavBarProps> = ({ content }) => {
         .map((route, index) => {
           return (
             <NavLink key={index} to={route.path} activeClassName="selected">
-              <li className="list-item sliding">{route.title}</li>
+              <ul className="list-wrapper">
+                <li className="list-item sliding">{route.title}</li>
+              </ul>
             </NavLink>
           );
         })}
-         <a
-          href="mailto:david_taylor96@outlook.com?subject=Hello David!"
-          target="_blank"
-          rel="noreferrer"
-          className="sliding contact"
-        >
-          Contact
-        </a>
+      <a
+        href="mailto:david_taylor96@outlook.com?subject=Hello David!"
+        target="_blank"
+        rel="noreferrer"
+        className="sliding contact"
+      >
+        Contact
+      </a>
     </Flex>
   );
 };

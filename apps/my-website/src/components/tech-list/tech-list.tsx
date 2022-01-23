@@ -27,21 +27,21 @@ export const TechListLayout: React.FC<ITechListProps> = ({ content, scrollIndica
   return (
     <>
     {isNotMobile && (
-      <div className="navigator-wrapper-right">
+      <section className="navigator-wrapper-right">
         <FindOutMore
           id={scrollIndicator.id}
           onRight={true}
           buttonText={scrollIndicator.buttonText}
           largeScreen={isLargeScreen ? true : false}
         />
-      </div>
+      </section>
     )}
-    <section className="tech-wrapper"  id={scrollIndicator.id}>
+    <article className="tech-wrapper"  id={scrollIndicator.id}>
       <h1 className="header" data-aos="fade-right" data-aos-delay="300">
         {content.title}
       </h1>
       <span id="separator" className="header" />
-      <div className="list-inner-wrapper">
+      <section className="list-inner-wrapper">
         <section className="list-container">
           {content.actions.map((lng, index) => {
             return (
@@ -56,8 +56,8 @@ export const TechListLayout: React.FC<ITechListProps> = ({ content, scrollIndica
             );
           })}
         </section>
-      </div>
-    </section>
+      </section>
+    </article>
     </>
   );
 };
