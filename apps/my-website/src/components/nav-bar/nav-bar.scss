@@ -11,12 +11,17 @@
   padding-right: 10px;
   background-color: white;
 
-  .list-item {
-    text-decoration: none;
-    color: black;
-    margin-left: 25px;
-    margin-right: 25px;
-    padding-bottom: 10px;
+  .list-wrapper {
+    padding: 0px;
+    margin: 0px;
+
+    .list-item {
+      text-decoration: none;
+      color: black;
+      margin-left: 25px;
+      margin-right: 25px;
+      padding-bottom: 10px;
+    }
   }
 }
 #image-logo {
