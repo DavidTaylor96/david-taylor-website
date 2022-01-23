@@ -9,7 +9,6 @@ interface IImageContainerProps {
   image?: string;
 }
 export const ImageContainer: React.FC<IImageContainerProps> = (props) => {
-
   AOS.init({
     delay: 200,
     duration: 1000,
@@ -18,9 +17,15 @@ export const ImageContainer: React.FC<IImageContainerProps> = (props) => {
   });
 
   return (
-    <section className="image-container"  data-aos="fade-up-right">
+    <section className="image-container" data-aos="fade-up-right">
       <div className="image-wrapper">
-        <img src={props.image} className="image" alt='profile of david' />
+        <img
+          src={props.image}
+          className="image"
+          alt="display of svg"
+          height="auto"
+          width="auto"
+        />
       </div>
     </section>
   );
