@@ -4,12 +4,14 @@ import useFetch from 'use-http';
 import './app.scss';
 import { NavBar } from './components/nav-bar/nav-bar';
 import ScrollToTop from './components/scroll-top/scroll-top';
-import { RouteComponent } from './screens/screen-layout';
 import { Website } from './service/website-types';
+
+const RouteComponent = React.lazy(() => import('./screens/screen-layout'));
 
 
 export const App = () => {
   const options = {};
+
   const { data } = useFetch<Website>(
     './assets/website.json',
     options,

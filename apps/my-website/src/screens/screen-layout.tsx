@@ -11,6 +11,7 @@ interface IPageComponent {
   route: IRoute;
 }
 
+
 export const PageComponent: FC<IPageComponent> = ({ content, route }) => {
   switch (content.type) {
     case 'basic-right-layout':
@@ -30,12 +31,17 @@ interface IRouteComponent {
   content: IRoute;
 }
 
-export const RouteComponent: FC<IRouteComponent> = ({ content }) => {
-  const { activeRoute, setActiveRoute } = useRouteStore();
+
+const RouteComponent: FC<IRouteComponent> = ({ content }) => {
+
+  const { setActiveRoute } = useRouteStore();
+
 
   useEffect(() => {
     setActiveRoute(content);
   }, [content]);
+
+
 
   return (
     <>
@@ -47,3 +53,5 @@ export const RouteComponent: FC<IRouteComponent> = ({ content }) => {
     </>
   );
 };
+
+export default RouteComponent;
