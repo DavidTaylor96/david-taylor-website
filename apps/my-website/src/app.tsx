@@ -1,5 +1,5 @@
 import React, { Suspense } from 'react';
-import { BrowserRouter as Router, HashRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, HashRouter, Redirect, Route, Switch } from 'react-router-dom';
 import useFetch from 'use-http';
 import './app.scss';
 import { NavBar } from './components/nav-bar/nav-bar';
@@ -39,6 +39,7 @@ export const App = () => {
                   </Route>
                 );
               })}
+              <Redirect from='*' to='/' />
             </Switch>
           </article>
         </Route>
