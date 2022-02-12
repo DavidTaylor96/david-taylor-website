@@ -1,11 +1,11 @@
 .tech-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  flex: auto;
-  height: 68vh;
-  margin-right: 25px;
-  margin-left: 25px;
+  justify-content: center;
+  flex: 1;
+  height: 65vh;
+  padding-right: 25px;
+  padding-left: 25px;
 
   #separator {
     height: 3px;
@@ -17,6 +17,10 @@
   .list-inner-wrapper {
     display: flex;
     flex-flow: row wrap;
+    height: 30vh;
+    align-items: center;
+    padding-bottom: 60px;
+
 
     .inner-list {
       display: flex;
@@ -29,7 +33,7 @@
       display: flex;
       flex: 1;
       flex-flow: column wrap;
-      height: 50%;
+      height: inherit;
 
       #list-element {
         padding-top: 10px;
@@ -53,8 +57,6 @@
   .tech-wrapper {
     display: flex;
     flex: auto;
-    margin-right: 25px;
-    margin-left: 25px;
 
     #list-element {
       font-size: 16px;
