@@ -115,7 +115,11 @@
             "Expo",
             "Node js",
             "Express",
-            "MongoDb"
+            "MongoDb",
+            "Typescript",
+            "Python", 
+            "SQL",
+            "Flask"
           ],
           "actions": [
             {
@@ -123,7 +127,7 @@
               "link": ""
             },
             {
-              "title": "React Native",
+              "title": "Vue js",
               "link": ""
             },
             {
@@ -140,6 +144,22 @@
             },
             {
               "title": "MongoDb",
+              "link": ""
+            },
+            {
+              "title": "Python",
+              "link": ""
+            },
+            {
+              "title": "Typescript",
+              "link": ""
+            },
+            {
+              "title": "Java",
+              "link": ""
+            },
+            {
+              "title": "PostgreSQL",
               "link": ""
             }
           ]
