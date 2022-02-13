@@ -9,6 +9,7 @@
       "pages": [
         {
           "showWelcome": true,
+          "hasLinks": true,
           "buttonText": "Find out more",
           "id": "about-me",
           "title": "About",
