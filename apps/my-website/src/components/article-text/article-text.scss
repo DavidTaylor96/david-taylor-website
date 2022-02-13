@@ -15,7 +15,6 @@ $border-color-hover: $color-theme;
   padding-left: 2em;
   padding-right: 2em;
 
-
   #separator {
     height: 3px;
     width: 130px;
@@ -49,9 +48,16 @@ $border-color-hover: $color-theme;
     }
   }
 
+  .hasIcon {
+    height: 5px;
+  }
+
+  .noIcon {
+    height: 20px;
+  }
+
   .btn {
     @include reset-button;
-    margin-top: 20px;
     margin-bottom: 30px;
     background-color: transparent;
     border: 3px solid $border-color;
