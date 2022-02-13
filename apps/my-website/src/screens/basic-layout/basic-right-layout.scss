@@ -1,6 +1,6 @@
-@use "../basic-layout/basic-layout.scss";
+@use '../basic-layout/basic-layout.scss';
 
-.welcome-wrapper{
+.welcome-wrapper {
   height: 70vh;
   display: flex;
   flex-basis: 100%;
@@ -14,3 +14,18 @@
   flex: auto;
   padding-left: 30px;
 }
+
+
+.icon-link-wrapper{
+  text-decoration: none;
+  display: flex; 
+  flex-direction: row;
+  padding-top: 10px;
+
+  .icons {
+    height: 40px;
+    width: 40px;
+    color: black;
+  }
+}
+
