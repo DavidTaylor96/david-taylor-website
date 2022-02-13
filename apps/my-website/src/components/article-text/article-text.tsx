@@ -34,13 +34,20 @@ export const ArticleScreen: React.FC<IArticleScreenProps> = (props) => {
 
 interface IArticleButton {
   location: string;
+  showLinks?: boolean;
 }
 
 export const ArticleButton: FC<IArticleButton> = (props) => {
   return (
-    <NavLink className="btn btn-stripe btn-radius" to={props.location}>
+    <>
+    <div className={props.showLinks ? 'hasIcon' : 'noIcon'}/>
+    <NavLink
+      className='btn btn-stripe btn-radius'
+      to={props.location}
+    >
       <p className="button-text">{props.children}</p>
       <FiArrowRight id="icon" />
     </NavLink>
+    </>
   );
 };

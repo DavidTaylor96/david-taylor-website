@@ -30,6 +30,8 @@ export interface IBaseLayout {
   id: string;
   buttonText: string;
   links: Links[];
+  hasLinks: boolean;
+
 }
 
 export interface ITechListLayout {

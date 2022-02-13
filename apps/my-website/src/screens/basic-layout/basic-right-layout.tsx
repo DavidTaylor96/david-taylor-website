@@ -71,7 +71,7 @@ const BasicRightLayout: FC<IBasicLayoutProps> = ({ content }) => {
               </div>
               {content.actions.map((route, index) => {
                 return (
-                  <ArticleButton key={index} location={route.link}>
+                  <ArticleButton showLinks key={index} location={route.link}>
                     {route.title}
                   </ArticleButton>
                 );
