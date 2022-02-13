@@ -15,6 +15,20 @@
           "type": "basic-right-layout",
           "text": "Innovative and self-motivated software developer with good problem-solving skills and a strong desire for continuous learning.",
           "image": "./assets/profile-main.svg",
+          "links": [
+            {
+              "icon": "git-hub",
+              "link": "https://github.com/DavidTaylor96"
+            },
+            {
+              "icon": "git-lab",
+              "link": "https://gitlab.com/David-Taylor"
+            },
+            {
+              "icon": "Linkedin",
+              "link": "https://www.linkedin.com/in/david-taylor-055b67201/"
+            }
+          ],
           "actions": [
             {
               "title": "Learn More",
