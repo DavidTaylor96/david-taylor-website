@@ -1,10 +1,13 @@
 import { FC } from 'react';
 import { Flex } from 'react-flex-lite';
-import { FiArrowDown } from 'react-icons/fi';
-import ProfileMain from '../../assets/profile-main.svg';
+import {
+  AiFillLinkedin,
+  AiOutlineGithub,
+  AiOutlineGitlab
+} from 'react-icons/ai';
 import {
   ArticleButton,
-  ArticleScreen,
+  ArticleScreen
 } from '../../components/article-text/article-text';
 import { FindOutMore } from '../../components/find-out-more/find-out-more';
 import { ImageContainer } from '../../components/image-container/image-container';
@@ -44,6 +47,28 @@ const BasicRightLayout: FC<IBasicLayoutProps> = ({ content }) => {
           {content.text}
           {!content.hiddenButton && (
             <>
+              <div className="icon-link-wrapper">
+                {content?.links?.map((link, index) => {
+                  return (
+                    <a
+                      href={link.link}
+                      target="_blank"
+                      rel="noreferrer"
+                      key={index}
+                    >
+                      {link.icon === 'git-hub' && (
+                        <AiOutlineGithub className="icons" />
+                      )}
+                      {link.icon === 'git-lab' && (
+                        <AiOutlineGitlab className="icons" />
+                      )}
+                      {link.icon === 'Linkedin' && (
+                        <AiFillLinkedin className="icons" />
+                      )}
+                    </a>
+                  );
+                })}
+              </div>
               {content.actions.map((route, index) => {
                 return (
                   <ArticleButton key={index} location={route.link}>
