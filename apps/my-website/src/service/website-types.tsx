@@ -8,6 +8,11 @@ export interface Action {
   link: string;
 }
 
+export interface Links {
+  icon: string;
+  link: string;
+}
+
 export interface Link {
   title: string;
   navLink: string;
@@ -24,6 +29,7 @@ export interface IBaseLayout {
   showWelcome: boolean;
   id: string;
   buttonText: string;
+  links: Links[];
 }
 
 export interface ITechListLayout {
